@@ -8,6 +8,7 @@ import { DesignDetail } from "./pages/DesignDetail";
 import { CreatorOnboarding } from "./pages/CreatorOnboarding";
 import { CreatorStorefront } from "./pages/CreatorStorefront";
 import { CollectionPage } from "./pages/Collection";
+import { TryOn } from "./pages/TryOn";
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/create" element={<Create />} />
           <Route path="/studio" element={<Studio />} />
+          <Route path="/try-on" element={<TryOn />} />
           <Route path="/design/:id" element={<DesignDetail />} />
           <Route path="/creator/onboarding" element={<CreatorOnboarding />} />
           <Route path="/creator/:slug" element={<CreatorStorefront />} />

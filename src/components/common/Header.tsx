@@ -18,6 +18,9 @@ export function Header() {
           <Link to="/create" className="hover:text-graphite">
             Create
           </Link>
+          <Link to="/try-on" className="hover:text-graphite">
+            Try It On
+          </Link>
           <Link to="/creator/onboarding" className="hover:text-graphite">
             Become a Creator
           </Link>
