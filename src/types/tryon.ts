@@ -8,8 +8,9 @@ export type EarringOption = {
   chainLength: number;
 };
 
-export type EarAnchor = {
-  /** 0–1, relative to the rendered photo's own width/height. */
-  xPct: number;
-  yPct: number;
+/** One accessory the customer has added to the photo — its own pin point and physics instance. */
+export type PlacedAccessory = {
+  id: string;
+  option: EarringOption;
+  anchorPx: { x: number; y: number };
 };

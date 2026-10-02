@@ -13,4 +13,14 @@ export const EARRING_OPTIONS: EarringOption[] = [
     displayWidth: 64,
     chainLength: 12,
   },
+  {
+    id: "flower-tassel",
+    label: "Flower Tassel",
+    image: "/votica-assets/ACC_1.png",
+    displayWidth: 46,
+    chainLength: 10,
+  },
 ];
+
+/** Matches the existing studio's 5-charm cap — keeps a composed look craftable and the canvas legible. */
+export const MAX_ACCESSORIES = 5;
