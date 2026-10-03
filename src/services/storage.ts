@@ -50,4 +50,5 @@ export const StorageKeys = {
   currentCharmDesign: "current-charm-design",
   charmDesigns: "charm-designs",
   productionReviewRequests: "production-review-requests",
+  quotes: "quotes",
 } as const;

@@ -36,22 +36,33 @@ export function Create() {
   const [brief, setBrief] = useState<CharmBriefInput>(design?.brief ?? defaultBrief());
   const [concepts, setConcepts] = useState<CharmConcept[]>([]);
   const [isGeneratingConcepts, setIsGeneratingConcepts] = useState(false);
+  const [generationError, setGenerationError] = useState<string | null>(null);
 
   const handleGenerateConcepts = async () => {
     if (isGeneratingConcepts) return;
     setIsGeneratingConcepts(true);
+    setGenerationError(null);
     trackEvent("create_started", { theme: brief.theme, hasPhoto: Boolean(brief.sourceImage) });
-    const concept = await generateCharmConcept(brief, 0);
-    setConcepts([concept]);
-    setStep("concepts");
+    const result = await generateCharmConcept(brief, 0);
+    if (result.kind === "error") {
+      setGenerationError(result.message);
+    } else {
+      setConcepts([result.concept]);
+      setStep("concepts");
+    }
     setIsGeneratingConcepts(false);
   };
 
   const handleGenerateAnother = async () => {
     if (isGeneratingConcepts || concepts.length >= MAX_CONCEPTS) return;
     setIsGeneratingConcepts(true);
-    const concept = await generateCharmConcept(brief, concepts.length);
-    setConcepts((prev) => [...prev, concept]);
+    setGenerationError(null);
+    const result = await generateCharmConcept(brief, concepts.length);
+    if (result.kind === "error") {
+      setGenerationError(result.message);
+    } else {
+      setConcepts((prev) => [...prev, result.concept]);
+    }
     setIsGeneratingConcepts(false);
   };
 
@@ -83,6 +94,20 @@ export function Create() {
             <CharmBriefForm value={brief} onChange={setBrief} onSubmit={handleGenerateConcepts} />
           </div>
         </>
+      )}
+
+      {generationError && (
+        <div className="mx-auto mt-6 flex max-w-2xl items-center justify-between gap-4 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
+          <span>{generationError}</span>
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={concepts.length > 0 ? handleGenerateAnother : handleGenerateConcepts}
+            disabled={isGeneratingConcepts}
+          >
+            Retry
+          </Button>
+        </div>
       )}
 
       {isGeneratingConcepts && concepts.length === 0 && (

@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
 import { getItem, setItem, StorageKeys } from "../services/storage";
+import { upsertCharmDesign } from "../services/charmDesignStore";
 import { editCharmConcept } from "../services/charmAi";
 import { generateId } from "../lib/utils";
 import type { CharmBriefInput, CharmConcept, CharmDesign, CharmDesignVersion } from "../types/charmStudio";
@@ -26,6 +27,7 @@ export function CharmDesignProvider({ children }: { children: ReactNode }) {
   const persist = useCallback((next: CharmDesign | null) => {
     setDesign(next);
     setItem(StorageKeys.currentCharmDesign, next);
+    if (next) upsertCharmDesign(next);
   }, []);
 
   const startDesignFromConcept = useCallback(
@@ -73,10 +75,28 @@ export function CharmDesignProvider({ children }: { children: ReactNode }) {
 
       setIsGenerating(true);
       try {
-        const concept = await editCharmConcept(previousImage ?? "", editRequestText);
+        const result = await editCharmConcept(previousImage ?? "", editRequestText);
+
+        if (result.kind === "error") {
+          setDesign((prev) => {
+            if (!prev) return prev;
+            const failed: CharmDesignVersion = { ...pendingVersion, status: "failed", errorMessage: result.message };
+            const next: CharmDesign = {
+              ...prev,
+              versions: prev.versions.map((v) => (v.id === pendingVersion.id ? failed : v)),
+              // currentVersionId intentionally left pointing at the last good version.
+              updatedAt: new Date().toISOString(),
+            };
+            setItem(StorageKeys.currentCharmDesign, next);
+            upsertCharmDesign(next);
+            return next;
+          });
+          return { ok: false, message: result.retryable ? `${result.message} You can try again.` : result.message };
+        }
+
         setDesign((prev) => {
           if (!prev) return prev;
-          const settled: CharmDesignVersion = { ...pendingVersion, status: "succeeded", concept };
+          const settled: CharmDesignVersion = { ...pendingVersion, status: "succeeded", concept: result.concept };
           const next: CharmDesign = {
             ...prev,
             versions: prev.versions.map((v) => (v.id === pendingVersion.id ? settled : v)),
@@ -84,6 +104,7 @@ export function CharmDesignProvider({ children }: { children: ReactNode }) {
             updatedAt: new Date().toISOString(),
           };
           setItem(StorageKeys.currentCharmDesign, next);
+          upsertCharmDesign(next);
           return next;
         });
         return { ok: true };
@@ -102,6 +123,7 @@ export function CharmDesignProvider({ children }: { children: ReactNode }) {
             updatedAt: new Date().toISOString(),
           };
           setItem(StorageKeys.currentCharmDesign, next);
+          upsertCharmDesign(next);
           return next;
         });
         return { ok: false, message: "That edit didn't go through — your previous version is still there." };

@@ -7,6 +7,9 @@ import { Studio } from "./pages/Studio";
 import { Builder } from "./pages/Builder";
 import { DesignDetail } from "./pages/DesignDetail";
 import { CharmReviewRequest } from "./pages/CharmReviewRequest";
+import { AccountRequests } from "./pages/AccountRequests";
+import { AdminRequests } from "./pages/admin/AdminRequests";
+import { AdminRequestDetail } from "./pages/admin/AdminRequestDetail";
 import { CreatorOnboarding } from "./pages/CreatorOnboarding";
 import { CreatorStorefront } from "./pages/CreatorStorefront";
 import { CollectionPage } from "./pages/Collection";
@@ -28,6 +31,9 @@ function App() {
           <Route path="/try-on" element={<TryOn />} />
           <Route path="/design/:id" element={<DesignDetail />} />
           <Route path="/charm/request" element={<CharmReviewRequest />} />
+          <Route path="/account/requests" element={<AccountRequests />} />
+          <Route path="/admin/requests" element={<AdminRequests />} />
+          <Route path="/admin/requests/:id" element={<AdminRequestDetail />} />
           <Route path="/creator/onboarding" element={<CreatorOnboarding />} />
           <Route path="/creator/:slug" element={<CreatorStorefront />} />
           <Route path="/collection/:slug" element={<CollectionPage />} />

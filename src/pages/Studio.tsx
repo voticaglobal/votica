@@ -4,7 +4,6 @@ import { ChevronLeft } from "lucide-react";
 import { HoopCanvas } from "../components/studio/HoopCanvas";
 import { CharmControls } from "../components/studio/CharmControls";
 import { CharmLibrarySheet } from "../components/studio/CharmLibrarySheet";
-import { AICharmModal } from "../components/studio/AICharmModal";
 import { StudioToolbar } from "../components/studio/StudioToolbar";
 import { BottomSheet } from "../components/common/BottomSheet";
 import { MaterialPicker } from "../components/studio/MaterialPicker";
@@ -22,7 +21,11 @@ export function Studio() {
   const [libraryOpen, setLibraryOpen] = useState(false);
   const [materialOpen, setMaterialOpen] = useState(false);
   const [baseOpen, setBaseOpen] = useState(false);
-  const [aiCharmOpen, setAiCharmOpen] = useState(false);
+
+  // Charm generation lives in one place only (/create's "Create Your Charm"
+  // flow) — the Studio no longer has its own independent AI-generation modal,
+  // to avoid two divergent implementations of the same Gemini call.
+  const goToCharmCreator = () => navigate("/create");
 
   useEffect(() => {
     trackEvent("studio_opened", { designId: currentDesign.id });
@@ -79,17 +82,15 @@ export function Studio() {
         onAddCharm={() => setLibraryOpen(true)}
         onMaterial={() => setMaterialOpen(true)}
         onBase={() => setBaseOpen(true)}
-        onAiCharm={() => setAiCharmOpen(true)}
+        onAiCharm={goToCharmCreator}
         onPreview={handlePreview}
       />
 
       <CharmLibrarySheet
         open={libraryOpen}
         onClose={() => setLibraryOpen(false)}
-        onOpenAiCharm={() => setAiCharmOpen(true)}
+        onOpenAiCharm={goToCharmCreator}
       />
-
-      <AICharmModal open={aiCharmOpen} onClose={() => setAiCharmOpen(false)} />
 
       <BottomSheet open={materialOpen} onClose={() => setMaterialOpen(false)} title="Material">
         <MaterialPicker />

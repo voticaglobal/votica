@@ -35,6 +35,11 @@ const THEME_WORDS = {
   symbol: "built around a simple meaningful symbol",
   original: "an original design",
 };
+const FINISH_WORDS = {
+  silver: "polished 925 silver",
+  "gold-vermeil": "warm gold vermeil (yellow gold tone)",
+  "rose-gold": "soft rose gold tone",
+};
 
 const VARIATION_HINTS = [
   "",
@@ -53,7 +58,7 @@ function buildImagePrompt(brief) {
     "The charm must show a small connection loop or hole at the TOP CENTER of the piece, clearly part of the design — this is how it attaches to a hoop or chain.",
     "The form must be simple and bold enough to stay recognizable at real charm scale (under 15mm) — thick clear lines, almost no fine or disconnected detail, no thin dangling elements that could break off.",
     "Capture the subject as a clean, reduced silhouette rather than a miniaturized full photo.",
-    "Polished metal finish, macro product photography, pure flat solid white background, no gradient, no shadow, no vignette, no text or watermark unless an initial letter was explicitly requested above.",
+    `Rendered in ${FINISH_WORDS[brief.finishColor] ?? "polished metal"}, macro product photography, pure flat solid white background, no gradient, no shadow, no vignette, no text or watermark unless an initial letter was explicitly requested above.`,
   ]
     .filter(Boolean)
     .join(" ");
@@ -87,20 +92,77 @@ const CONCEPT_SCHEMA = {
   required: ["name", "designIntent", "connectionDescription", "loopVisible", "needsReview"],
 };
 
-async function callGemini(apiKey, model, body) {
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-    {
-      method: "POST",
-      headers: { "x-goog-api-key": apiKey, "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    },
-  );
-  if (!response.ok) {
-    const detail = await response.text();
-    throw new Error(`${model} request failed: ${detail.slice(0, 500)}`);
+const REQUEST_TIMEOUT_MS = 55_000; // stay under typical serverless function limits
+const MAX_RETRIES = 1; // one retry only — image generation is slow and not free
+
+async function callGeminiOnce(apiKey, model, body) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  try {
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+      {
+        method: "POST",
+        headers: { "x-goog-api-key": apiKey, "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+        signal: controller.signal,
+      },
+    );
+    if (!response.ok) {
+      const detail = await response.text();
+      const err = new Error(`${model} request failed (${response.status}): ${detail.slice(0, 500)}`);
+      err.status = response.status;
+      throw err;
+    }
+    return await response.json();
+  } finally {
+    clearTimeout(timeout);
   }
-  return response.json();
+}
+
+/** Retries once on 429/5xx or timeout — never on 4xx (bad request won't fix itself). */
+async function callGemini(apiKey, model, body) {
+  let lastErr;
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      return await callGeminiOnce(apiKey, model, body);
+    } catch (err) {
+      lastErr = err;
+      const retryable = err.name === "AbortError" || !err.status || err.status === 429 || err.status >= 500;
+      if (!retryable || attempt === MAX_RETRIES) throw err;
+      await new Promise((r) => setTimeout(r, 500 * (attempt + 1)));
+    }
+  }
+  throw lastErr;
+}
+
+// In-memory per-instance rate limit — IMPLEMENTED BUT VERIFIED INEFFECTIVE:
+// tested locally via `vercel dev` with 12 sequential requests from a fixed IP
+// and NONE were throttled, meaning this module's in-memory state does not
+// reliably survive between invocations in this serverless runtime (whether
+// that's `vercel dev`'s emulation specifically or also true in production is
+// unconfirmed without a deployed test). Left in place as a harmless no-cost
+// best-effort layer, but do not rely on it. A real limit needs a shared store
+// (a Supabase row/table keyed by authenticated user, Redis, Vercel KV, etc.)
+// that isn't connected yet — see supabase/schema.sql. Until then, the only
+// real protection against generation spam is the client-side single-in-flight
+// guard in CharmDesignContext/Create.tsx, which is not abuse-proof.
+const WINDOW_MS = 10 * 60 * 1000;
+const MAX_PER_WINDOW = 10;
+const MAX_CONCURRENT = 3;
+const requestLog = new Map(); // ip -> timestamps[]
+let concurrentCount = 0;
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const timestamps = (requestLog.get(ip) ?? []).filter((t) => now - t < WINDOW_MS);
+  if (timestamps.length >= MAX_PER_WINDOW) {
+    requestLog.set(ip, timestamps);
+    return true;
+  }
+  timestamps.push(now);
+  requestLog.set(ip, timestamps);
+  return false;
 }
 
 export default async function handler(req, res) {
@@ -115,6 +177,16 @@ export default async function handler(req, res) {
     return;
   }
 
+  const ip = req.headers["x-forwarded-for"]?.split(",")[0]?.trim() || req.socket?.remoteAddress || "unknown";
+  if (isRateLimited(ip)) {
+    res.status(429).json({ error: "Too many generations — please wait a few minutes and try again." });
+    return;
+  }
+  if (concurrentCount >= MAX_CONCURRENT) {
+    res.status(429).json({ error: "Generation is busy right now — please try again in a moment." });
+    return;
+  }
+
   const { brief, sourceImage, editOf } = req.body ?? {};
   if (!editOf && (!brief || typeof brief !== "object")) {
     res.status(400).json({ error: "Missing brief." });
@@ -125,6 +197,7 @@ export default async function handler(req, res) {
     return;
   }
 
+  concurrentCount++;
   try {
     // 1) Image generation or edit
     const imageParts = [];
@@ -187,5 +260,7 @@ export default async function handler(req, res) {
     });
   } catch (err) {
     res.status(500).json({ error: "Unexpected error.", detail: String(err) });
+  } finally {
+    concurrentCount--;
   }
 }

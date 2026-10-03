@@ -93,12 +93,12 @@ export type CharmDesign = {
   updatedAt: string;
 };
 
-export type ProductionReviewStatus =
-  | "submitted"
-  | "in_review"
-  | "quoted"
-  | "approved_by_customer"
-  | "declined";
+/**
+ * Mirrors supabase/schema.sql's review_status enum. Separate from Quote.status
+ * (below) on purpose: "is this design manufacturable" and "has a quote been
+ * sent/accepted" are different questions with different owners and timing.
+ */
+export type ProductionReviewStatus = "submitted" | "needs_changes" | "approved" | "rejected";
 
 export type ProductionReviewRequest = {
   id: string;
@@ -116,5 +116,37 @@ export type ProductionReviewRequest = {
   contactEmail: string;
   note?: string;
   status: ProductionReviewStatus;
+  /** Ops-only — never shown to the customer. */
+  internalNotes?: string;
+  /** Shown to the customer as-is (e.g. what needs to change before approval). */
+  customerMessage?: string;
+  loopConfirmedByOperator: boolean;
   submittedAt: string;
+  updatedAt: string;
+};
+
+export type QuoteStatus = "draft" | "sent" | "accepted" | "declined" | "expired";
+
+export type QuoteLineItem = {
+  id: string;
+  label: string;
+  amount: number;
+};
+
+export type Quote = {
+  id: string;
+  productionRequestId: string;
+  /** Exact design version this quote was built against — re-approving after the design changes is blocked (see isQuoteStillValid). */
+  charmDesignVersionId: string;
+  /** Supersedes an earlier quote on the same request when ops revises it — the old one becomes unapprovable. */
+  supersedesQuoteId?: string;
+  status: QuoteStatus;
+  lineItems: QuoteLineItem[];
+  currency: string;
+  includesHoop: boolean;
+  estimatedScheduleText: string;
+  validUntil: string;
+  createdAt: string;
+  sentAt?: string;
+  customerDecisionAt?: string;
 };

@@ -6,11 +6,9 @@ import { Chip } from "../components/common/Chip";
 import { FieldGroup, Input, Textarea } from "../components/common/Field";
 import { useCharmDesign } from "../context/CharmDesignContext";
 import { getManufacturingProfile, getUnconfirmedSpecFields } from "../services/manufacturingProfile";
-import { appendToList, StorageKeys } from "../services/storage";
+import { submitProductionRequest } from "../services/reviewStore";
 import { trackEvent } from "../services/analytics";
-import { generateId } from "../lib/utils";
 import { MATERIAL_LABELS } from "../lib/labels";
-import type { ProductionReviewRequest } from "../types/charmStudio";
 import type { MaterialType } from "../types/jewelry";
 
 export function CharmReviewRequest() {
@@ -32,6 +30,7 @@ export function CharmReviewRequest() {
   const [contactEmail, setContactEmail] = useState("");
   const [note, setNote] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [duplicateNotice, setDuplicateNotice] = useState(false);
 
   if (!design || !concept) {
     return (
@@ -45,8 +44,7 @@ export function CharmReviewRequest() {
   }
 
   const handleSubmit = () => {
-    const request: ProductionReviewRequest = {
-      id: generateId("review"),
+    const result = submitProductionRequest({
       charmDesignId: design.id,
       versionId: design.currentVersionId,
       desiredSizeId,
@@ -60,10 +58,12 @@ export function CharmReviewRequest() {
       contactName,
       contactEmail,
       note: note || undefined,
-      status: "submitted",
-      submittedAt: new Date().toISOString(),
-    };
-    appendToList(StorageKeys.productionReviewRequests, request, 50);
+    });
+
+    if (!result.ok) {
+      setDuplicateNotice(true);
+      return;
+    }
     trackEvent("quote_requested", { charmDesignId: design.id });
     setSubmitted(true);
   };
@@ -76,9 +76,12 @@ export function CharmReviewRequest() {
           Our team will review the connection point, sizing, and manufacturability, then send you a
           quote to approve before anything goes into production.
         </p>
-        <Button className="mt-8" onClick={() => navigate("/")}>
-          Back to Home
-        </Button>
+        <div className="mt-8 flex flex-col items-center gap-3">
+          <Button onClick={() => navigate("/account/requests")}>View Your Requests</Button>
+          <button type="button" className="text-sm text-graphite-soft hover:underline" onClick={() => navigate("/")}>
+            Back to Home
+          </button>
+        </div>
       </Container>
     );
   }
@@ -186,6 +189,15 @@ export function CharmReviewRequest() {
           >
             Request Production Review
           </Button>
+          {duplicateNotice && (
+            <p className="text-xs text-graphite-soft">
+              You already have an open review request for this exact design version.{" "}
+              <button type="button" className="underline" onClick={() => navigate("/account/requests")}>
+                View your requests
+              </button>{" "}
+              instead of submitting another.
+            </p>
+          )}
         </div>
       </div>
     </Container>
