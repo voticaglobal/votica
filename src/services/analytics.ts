@@ -21,7 +21,9 @@ export type AnalyticsEvent =
   | "part_added"
   | "part_deleted"
   | "builder_preview_toggled"
-  | "builder_posted";
+  | "builder_posted"
+  | "concept_selected"
+  | "quote_requested";
 
 /**
  * Demo-mode analytics: logs to console only. Swap the console.info call for a

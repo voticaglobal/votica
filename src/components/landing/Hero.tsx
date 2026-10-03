@@ -13,11 +13,11 @@ export function Hero() {
         <div className="order-2 sm:order-1">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-champagne">vandida</p>
           <h1 className="text-4xl font-medium leading-[1.08] text-graphite sm:text-5xl lg:text-6xl">
-            Turn your story into jewelry.
+            Create a charm that means something to you.
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-graphite-soft sm:text-lg">
-            Create one-of-a-kind jewelry from a photo, memory, or idea — then wear it, gift it, or turn it
-            into your own collection.
+            Start with a photo, a memory, or an idea — see it come to life as a charm, try it on a hoop,
+            and request a production review when it's ready.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -25,7 +25,7 @@ export function Hero() {
               onClick={() => trackEvent("landing_cta_clicked", { cta: "create" })}
             >
               <Button size="lg" className="w-full sm:w-auto">
-                Create Your Jewelry
+                Create Your Charm
                 <ArrowRight size={16} />
               </Button>
             </Link>

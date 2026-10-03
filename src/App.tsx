@@ -6,6 +6,7 @@ import { Create } from "./pages/Create";
 import { Studio } from "./pages/Studio";
 import { Builder } from "./pages/Builder";
 import { DesignDetail } from "./pages/DesignDetail";
+import { CharmReviewRequest } from "./pages/CharmReviewRequest";
 import { CreatorOnboarding } from "./pages/CreatorOnboarding";
 import { CreatorStorefront } from "./pages/CreatorStorefront";
 import { CollectionPage } from "./pages/Collection";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/builder" element={<Builder />} />
           <Route path="/try-on" element={<TryOn />} />
           <Route path="/design/:id" element={<DesignDetail />} />
+          <Route path="/charm/request" element={<CharmReviewRequest />} />
           <Route path="/creator/onboarding" element={<CreatorOnboarding />} />
           <Route path="/creator/:slug" element={<CreatorStorefront />} />
           <Route path="/collection/:slug" element={<CollectionPage />} />

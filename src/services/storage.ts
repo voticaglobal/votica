@@ -47,4 +47,7 @@ export const StorageKeys = {
   creatorProfile: "creator-profile",
   collections: "collections",
   productionRequests: "production-requests",
+  currentCharmDesign: "current-charm-design",
+  charmDesigns: "charm-designs",
+  productionReviewRequests: "production-review-requests",
 } as const;

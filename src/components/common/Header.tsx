@@ -29,7 +29,7 @@ export function Header() {
           </Link>
         </nav>
         <Link to="/create">
-          <Button size="sm">Create Your Jewelry</Button>
+          <Button size="sm">Create Your Charm</Button>
         </Link>
       </Container>
     </header>

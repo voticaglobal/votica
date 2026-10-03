@@ -4,12 +4,15 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { DesignProvider } from './context/DesignContext.tsx'
+import { CharmDesignProvider } from './context/CharmDesignContext.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <DesignProvider>
-        <App />
+        <CharmDesignProvider>
+          <App />
+        </CharmDesignProvider>
       </DesignProvider>
     </BrowserRouter>
   </StrictMode>,
