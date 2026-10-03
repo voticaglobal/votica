@@ -15,7 +15,13 @@ export type AnalyticsEvent =
   | "production_request_submitted"
   | "sell_design_clicked"
   | "creator_onboarding_started"
-  | "creator_collection_created";
+  | "creator_collection_created"
+  | "builder_opened"
+  | "base_selected"
+  | "part_added"
+  | "part_deleted"
+  | "builder_preview_toggled"
+  | "builder_posted";
 
 /**
  * Demo-mode analytics: logs to console only. Swap the console.info call for a

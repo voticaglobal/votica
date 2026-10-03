@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 export function Header() {
   const location = useLocation();
-  const isStudio = location.pathname.startsWith("/studio");
+  const isStudio = location.pathname.startsWith("/studio") || location.pathname.startsWith("/builder");
 
   if (isStudio) return null;
 
@@ -20,6 +20,9 @@ export function Header() {
           </Link>
           <Link to="/try-on" className="hover:text-graphite">
             Try It On
+          </Link>
+          <Link to="/builder" className="hover:text-graphite">
+            Build From Parts
           </Link>
           <Link to="/creator/onboarding" className="hover:text-graphite">
             Become a Creator

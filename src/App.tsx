@@ -4,6 +4,7 @@ import { Footer } from "./components/landing/Footer";
 import { Home } from "./pages/Home";
 import { Create } from "./pages/Create";
 import { Studio } from "./pages/Studio";
+import { Builder } from "./pages/Builder";
 import { DesignDetail } from "./pages/DesignDetail";
 import { CreatorOnboarding } from "./pages/CreatorOnboarding";
 import { CreatorStorefront } from "./pages/CreatorStorefront";
@@ -12,7 +13,7 @@ import { TryOn } from "./pages/TryOn";
 
 function App() {
   const location = useLocation();
-  const isStudio = location.pathname.startsWith("/studio");
+  const isStudio = location.pathname.startsWith("/studio") || location.pathname.startsWith("/builder");
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/create" element={<Create />} />
           <Route path="/studio" element={<Studio />} />
+          <Route path="/builder" element={<Builder />} />
           <Route path="/try-on" element={<TryOn />} />
           <Route path="/design/:id" element={<DesignDetail />} />
           <Route path="/creator/onboarding" element={<CreatorOnboarding />} />
