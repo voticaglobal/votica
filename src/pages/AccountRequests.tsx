@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container } from "../components/common/Container";
 import { Button } from "../components/common/Button";
+import { DemoNotice } from "../components/common/DemoNotice";
 import { getCharmDesignById } from "../services/charmDesignStore";
 import {
   listProductionRequests,
@@ -33,6 +34,10 @@ export function AccountRequests() {
         This browser's local requests. Cross-device sync needs the Supabase backend connected — see
         the session report.
       </p>
+      <DemoNotice className="mt-4">
+        Preview build. Nothing below was sent to a real production team, and approving a quote does
+        not trigger payment or production — see each request's status for what's demo vs. real.
+      </DemoNotice>
 
       <div className="mt-8 space-y-6">
         {requests.map((r) => (

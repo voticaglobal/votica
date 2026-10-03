@@ -1,11 +1,28 @@
 // Vercel serverless function. Keeps GEMINI_API_KEY server-side only —
 // the client never sees it. Falls back gracefully (501) when unconfigured
 // so the app still works in demo mode with no key set.
+//
+// No code in src/ calls this endpoint anymore (superseded by
+// api/generate-charm-concept.js) — kept live for now rather than deleted, so
+// it still needs the same preview gate as a cost-abuse vector in its own right.
+function requirePreviewAccess(req, res) {
+  const required = process.env.PREVIEW_ACCESS_TOKEN;
+  if (!required) return true;
+  const provided = req.headers["x-preview-access"];
+  if (provided !== required) {
+    res.status(401).json({ error: "Preview access required." });
+    return false;
+  }
+  return true;
+}
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     res.status(405).json({ error: "Method not allowed" });
     return;
   }
+
+  if (!requirePreviewAccess(req, res)) return;
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {

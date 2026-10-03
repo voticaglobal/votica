@@ -77,10 +77,11 @@ export function CharmDesignProvider({ children }: { children: ReactNode }) {
       try {
         const result = await editCharmConcept(previousImage ?? "", editRequestText);
 
-        if (result.kind === "error") {
+        if (result.kind === "error" || result.kind === "preview_locked") {
+          const errorMessage = result.kind === "preview_locked" ? "Preview access required." : result.message;
           setDesign((prev) => {
             if (!prev) return prev;
-            const failed: CharmDesignVersion = { ...pendingVersion, status: "failed", errorMessage: result.message };
+            const failed: CharmDesignVersion = { ...pendingVersion, status: "failed", errorMessage };
             const next: CharmDesign = {
               ...prev,
               versions: prev.versions.map((v) => (v.id === pendingVersion.id ? failed : v)),
@@ -91,6 +92,7 @@ export function CharmDesignProvider({ children }: { children: ReactNode }) {
             upsertCharmDesign(next);
             return next;
           });
+          if (result.kind === "preview_locked") return { ok: false, message: "preview_locked" };
           return { ok: false, message: result.retryable ? `${result.message} You can try again.` : result.message };
         }
 

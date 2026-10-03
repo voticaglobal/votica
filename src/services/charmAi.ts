@@ -1,5 +1,6 @@
 import { dataUrlToParts } from "../lib/image";
 import { generateId } from "../lib/utils";
+import { previewAccessHeaders } from "../lib/previewAccess";
 import type { CharmBriefInput, CharmConcept } from "../types/charmStudio";
 
 type ServerConceptResponse = {
@@ -21,7 +22,8 @@ const DEMO_NOTE = "Demo concept — no Gemini API key configured, so this isn't 
  */
 export type ConceptResult =
   | { kind: "success" | "demo"; concept: CharmConcept }
-  | { kind: "error"; message: string; retryable: boolean };
+  | { kind: "error"; message: string; retryable: boolean }
+  | { kind: "preview_locked" };
 
 function demoConcept(brief: CharmBriefInput | null, editRequestText?: string): CharmConcept {
   return {
@@ -67,7 +69,7 @@ async function postConceptRequest(
   try {
     response = await fetch("/api/generate-charm-concept", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...previewAccessHeaders() },
       body: JSON.stringify(body),
     });
   } catch {
@@ -87,6 +89,10 @@ async function postConceptRequest(
   if (response.status === 404) {
     // Endpoint not served at all (plain `vite dev`) — same reasoning as above.
     return { kind: "demo", concept: demoFallback() };
+  }
+
+  if (response.status === 401) {
+    return { kind: "preview_locked" };
   }
 
   if (!response.ok) {

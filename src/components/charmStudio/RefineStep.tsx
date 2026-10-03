@@ -2,6 +2,7 @@ import { useState } from "react";
 import { History, Loader2 } from "lucide-react";
 import { Button } from "../common/Button";
 import { Textarea } from "../common/Field";
+import { PreviewAccessPrompt } from "./PreviewAccessPrompt";
 import { useCharmDesign } from "../../context/CharmDesignContext";
 import { cn } from "../../lib/utils";
 
@@ -16,10 +17,21 @@ export function RefineStep({ onContinue }: { onContinue: () => void }) {
   const { design, isGenerating, requestEdit, restoreVersion } = useCharmDesign();
   const [customEdit, setCustomEdit] = useState("");
   const [message, setMessage] = useState<string | null>(null);
+  const [previewLocked, setPreviewLocked] = useState(false);
 
   if (!design) return null;
   const currentVersion = design.versions.find((v) => v.id === design.currentVersionId);
   const concept = currentVersion?.concept;
+
+  const handleResult = (result: { ok: boolean; message?: string }) => {
+    if (!result.ok && result.message === "preview_locked") {
+      setPreviewLocked(true);
+      setMessage(null);
+      return;
+    }
+    setPreviewLocked(false);
+    setMessage(result.ok ? null : (result.message ?? null));
+  };
 
   const handleQuickEdit = async (text: string | null) => {
     if (!text) {
@@ -27,14 +39,13 @@ export function RefineStep({ onContinue }: { onContinue: () => void }) {
       return;
     }
     if (isGenerating) return;
-    const result = await requestEdit(text);
-    setMessage(result.ok ? null : (result.message ?? null));
+    handleResult(await requestEdit(text));
   };
 
   const handleCustomEdit = async () => {
     if (!customEdit.trim() || isGenerating) return;
     const result = await requestEdit(customEdit.trim());
-    setMessage(result.ok ? null : (result.message ?? null));
+    handleResult(result);
     if (result.ok) setCustomEdit("");
   };
 
@@ -109,6 +120,7 @@ export function RefineStep({ onContinue }: { onContinue: () => void }) {
         </div>
 
         {message && <p className="mt-3 text-xs text-graphite-soft">{message}</p>}
+        {previewLocked && <PreviewAccessPrompt onUnlocked={() => setPreviewLocked(false)} />}
 
         <div className="mt-5">
           <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-graphite-soft">Quick edits</p>

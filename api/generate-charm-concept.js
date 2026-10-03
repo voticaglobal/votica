@@ -165,11 +165,29 @@ function isRateLimited(ip) {
   return false;
 }
 
+// Set only on Preview (see vercel env ls) — Production has no PREVIEW_ACCESS_TOKEN,
+// so this check is a no-op there. On Preview, every call must carry a matching
+// X-Preview-Access header or it's rejected before the Gemini key is ever read,
+// regardless of whether Vercel's own deployment protection also covers this
+// route — see the session report for what was verified about that separately.
+function requirePreviewAccess(req, res) {
+  const required = process.env.PREVIEW_ACCESS_TOKEN;
+  if (!required) return true; // not a preview deployment (or not configured) — no extra gate
+  const provided = req.headers["x-preview-access"];
+  if (provided !== required) {
+    res.status(401).json({ error: "Preview access required." });
+    return false;
+  }
+  return true;
+}
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     res.status(405).json({ error: "Method not allowed" });
     return;
   }
+
+  if (!requirePreviewAccess(req, res)) return;
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {

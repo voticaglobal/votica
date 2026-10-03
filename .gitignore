@@ -25,3 +25,6 @@ dist-ssr
 
 .vercel
 .env*
+.bypass-secret.local
+.gemini-key.local
+.preview-token.local

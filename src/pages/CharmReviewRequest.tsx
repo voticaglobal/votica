@@ -5,6 +5,7 @@ import { Button } from "../components/common/Button";
 import { Chip } from "../components/common/Chip";
 import { FieldGroup, Input, Textarea } from "../components/common/Field";
 import { useCharmDesign } from "../context/CharmDesignContext";
+import { DemoNotice } from "../components/common/DemoNotice";
 import { getManufacturingProfile, getUnconfirmedSpecFields } from "../services/manufacturingProfile";
 import { submitProductionRequest } from "../services/reviewStore";
 import { trackEvent } from "../services/analytics";
@@ -71,10 +72,15 @@ export function CharmReviewRequest() {
   if (submitted) {
     return (
       <Container className="py-24 text-center">
-        <h1 className="font-serif text-2xl text-graphite">Request received.</h1>
+        <h1 className="font-serif text-2xl text-graphite">Request saved (demo).</h1>
         <p className="mx-auto mt-3 max-w-md text-graphite-soft">
-          Our team will review the connection point, sizing, and manufacturability, then send you a
-          quote to approve before anything goes into production.
+          In the real product, our team would review the connection point, sizing, and
+          manufacturability, then send a quote to approve before production. In this preview,
+          nothing was sent anywhere — try the demo admin review at{" "}
+          <button type="button" className="underline" onClick={() => navigate("/admin/requests")}>
+            /admin/requests
+          </button>
+          .
         </p>
         <div className="mt-8 flex flex-col items-center gap-3">
           <Button onClick={() => navigate("/account/requests")}>View Your Requests</Button>
@@ -112,6 +118,11 @@ export function CharmReviewRequest() {
             This isn't checkout — our team confirms manufacturability and sends a quote for you to
             approve before anything is produced.
           </p>
+          <DemoNotice>
+            Preview build: this request is saved only in this browser and is <strong>not</strong>{" "}
+            delivered to a real production team. Please use a test name/email, not real personal
+            information.
+          </DemoNotice>
 
           <FieldGroup label="Size" htmlFor="size">
             <div className="flex flex-wrap gap-2">

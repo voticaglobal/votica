@@ -6,6 +6,8 @@ import { Button } from "../components/common/Button";
 import { CharmBriefForm } from "../components/charmStudio/CharmBriefForm";
 import { ConceptOptionCard } from "../components/charmStudio/ConceptOptionCard";
 import { RefineStep } from "../components/charmStudio/RefineStep";
+import { PreviewAccessPrompt } from "../components/charmStudio/PreviewAccessPrompt";
+import { DemoNotice } from "../components/common/DemoNotice";
 import { useDesign } from "../context/DesignContext";
 import { useCharmDesign } from "../context/CharmDesignContext";
 import { generateCharmConcept } from "../services/charmAi";
@@ -37,14 +39,18 @@ export function Create() {
   const [concepts, setConcepts] = useState<CharmConcept[]>([]);
   const [isGeneratingConcepts, setIsGeneratingConcepts] = useState(false);
   const [generationError, setGenerationError] = useState<string | null>(null);
+  const [previewLocked, setPreviewLocked] = useState(false);
 
   const handleGenerateConcepts = async () => {
     if (isGeneratingConcepts) return;
     setIsGeneratingConcepts(true);
     setGenerationError(null);
+    setPreviewLocked(false);
     trackEvent("create_started", { theme: brief.theme, hasPhoto: Boolean(brief.sourceImage) });
     const result = await generateCharmConcept(brief, 0);
-    if (result.kind === "error") {
+    if (result.kind === "preview_locked") {
+      setPreviewLocked(true);
+    } else if (result.kind === "error") {
       setGenerationError(result.message);
     } else {
       setConcepts([result.concept]);
@@ -57,8 +63,11 @@ export function Create() {
     if (isGeneratingConcepts || concepts.length >= MAX_CONCEPTS) return;
     setIsGeneratingConcepts(true);
     setGenerationError(null);
+    setPreviewLocked(false);
     const result = await generateCharmConcept(brief, concepts.length);
-    if (result.kind === "error") {
+    if (result.kind === "preview_locked") {
+      setPreviewLocked(true);
+    } else if (result.kind === "error") {
       setGenerationError(result.message);
     } else {
       setConcepts((prev) => [...prev, result.concept]);
@@ -91,10 +100,17 @@ export function Create() {
             <p className="mt-3 text-graphite-soft">Start with a photo, a memory, or an idea.</p>
           </div>
           <div className="max-w-2xl">
+            <DemoNotice className="mb-8">
+              This is a preview build. Designs and production requests are saved only in this
+              browser — they are not sent to a real production team. Please don't enter real
+              personal information; no payment is ever collected here.
+            </DemoNotice>
             <CharmBriefForm value={brief} onChange={setBrief} onSubmit={handleGenerateConcepts} />
           </div>
         </>
       )}
+
+      {previewLocked && <PreviewAccessPrompt onUnlocked={() => setPreviewLocked(false)} />}
 
       {generationError && (
         <div className="mx-auto mt-6 flex max-w-2xl items-center justify-between gap-4 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
