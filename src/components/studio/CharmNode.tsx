@@ -1,6 +1,7 @@
 import type { PointerEvent as ReactPointerEvent } from "react";
 import type { CharmInstance } from "../../types/jewelry";
 import { CharmShape, CharmJumpRing, CHARM_HANG_OFFSET } from "../../data/charms";
+import { getPart } from "../../data/parts";
 
 export function CharmNode({
   charm,
@@ -23,6 +24,8 @@ export function CharmNode({
   onMove: (direction: -1 | 1) => void;
   onDelete: () => void;
 }) {
+  const label = charm.partId ? (getPart(charm.partId)?.name ?? "real part") : `${charm.type} charm`;
+
   return (
     <g
       transform={`translate(${x} ${y}) rotate(${charm.rotation}) scale(${charm.scale})`}
@@ -30,7 +33,7 @@ export function CharmNode({
       onClick={onSelect}
       role="button"
       tabIndex={0}
-      aria-label={`${charm.type} charm${selected ? ", selected" : ""}. Use left and right arrow keys to move it along the hoop.`}
+      aria-label={`${label}${selected ? ", selected" : ""}. Use left and right arrow keys to move it along the hoop.`}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
@@ -65,7 +68,13 @@ export function CharmNode({
       <g filter="url(#vandida-charm-shadow)">
         <CharmJumpRing material={charm.material} />
         <g transform={`translate(0 ${CHARM_HANG_OFFSET})`}>
-          <CharmShape type={charm.type} material={charm.material} text={charm.text} customAssetUrl={charm.customAssetUrl} />
+          <CharmShape
+            type={charm.type}
+            material={charm.material}
+            text={charm.text}
+            customAssetUrl={charm.customAssetUrl}
+            partImageUrl={charm.partId ? getPart(charm.partId)?.imageUrl : undefined}
+          />
         </g>
       </g>
     </g>

@@ -13,7 +13,8 @@ export type CharmType =
   | "moon"
   | "gem"
   | "initial"
-  | "custom";
+  | "custom"
+  | "part";
 
 export type AttachmentPoint = {
   id: string;
@@ -31,6 +32,8 @@ export type CharmInstance = {
   material: MaterialType;
   customAssetUrl?: string;
   text?: string;
+  /** Set when `type === "part"` — id into PARTS_CATALOG, rendered as the real photo instead of a vector shape. */
+  partId?: string;
 };
 
 export type JewelryDesign = {
@@ -42,6 +45,8 @@ export type JewelryDesign = {
   gemstone?: GemstoneType;
   story?: string;
   sourceImage?: string;
+  /** A real base/finding photo the customer pointed to as a reference — informational only; the hoop preview geometry is not swapped to match it. */
+  baseReferencePartId?: string;
   charms: CharmInstance[];
   createdAt: string;
   updatedAt: string;

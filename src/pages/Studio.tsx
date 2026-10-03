@@ -8,6 +8,7 @@ import { AICharmModal } from "../components/studio/AICharmModal";
 import { StudioToolbar } from "../components/studio/StudioToolbar";
 import { BottomSheet } from "../components/common/BottomSheet";
 import { MaterialPicker } from "../components/studio/MaterialPicker";
+import { BaseReferenceSheet } from "../components/studio/BaseReferenceSheet";
 import { useDesign } from "../context/DesignContext";
 import { calculateEstimatedPrice } from "../services/pricing";
 import { trackEvent } from "../services/analytics";
@@ -20,6 +21,7 @@ export function Studio() {
   const [selectedCharmId, setSelectedCharmId] = useState<string | null>(null);
   const [libraryOpen, setLibraryOpen] = useState(false);
   const [materialOpen, setMaterialOpen] = useState(false);
+  const [baseOpen, setBaseOpen] = useState(false);
   const [aiCharmOpen, setAiCharmOpen] = useState(false);
 
   useEffect(() => {
@@ -76,6 +78,7 @@ export function Studio() {
       <StudioToolbar
         onAddCharm={() => setLibraryOpen(true)}
         onMaterial={() => setMaterialOpen(true)}
+        onBase={() => setBaseOpen(true)}
         onAiCharm={() => setAiCharmOpen(true)}
         onPreview={handlePreview}
       />
@@ -90,6 +93,10 @@ export function Studio() {
 
       <BottomSheet open={materialOpen} onClose={() => setMaterialOpen(false)} title="Material">
         <MaterialPicker />
+      </BottomSheet>
+
+      <BottomSheet open={baseOpen} onClose={() => setBaseOpen(false)} title="Base reference">
+        <BaseReferenceSheet />
       </BottomSheet>
     </div>
   );

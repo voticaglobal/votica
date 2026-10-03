@@ -22,6 +22,9 @@ export const PRICING = {
 export function calculateEstimatedPrice(design: Pick<JewelryDesign, "productType" | "material" | "charms">): number {
   const base = PRICING.base[design.productType] ?? PRICING.base["hoop-earring"];
   const materialSurcharge = PRICING.materialSurcharge[design.material] ?? 0;
+  // Real catalog parts (type "part") are priced at the same standard rate as vector
+  // charms for now — their actual retailPrice is unconfirmed (see Part.retailPrice),
+  // so this is a demo estimate, not a confirmed per-part price.
   const charmsTotal = design.charms.reduce((sum, charm) => {
     return sum + (charm.type === "custom" ? PRICING.charm.custom : PRICING.charm.standard);
   }, 0);

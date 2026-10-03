@@ -1,19 +1,22 @@
-import { Plus, Gem, Sparkles, Eye } from "lucide-react";
+import { Plus, Gem, Sparkles, Eye, Circle } from "lucide-react";
 
 export function StudioToolbar({
   onAddCharm,
   onMaterial,
+  onBase,
   onAiCharm,
   onPreview,
 }: {
   onAddCharm: () => void;
   onMaterial: () => void;
+  onBase: () => void;
   onAiCharm: () => void;
   onPreview: () => void;
 }) {
   const items = [
     { label: "Add Charm", icon: Plus, onClick: onAddCharm },
     { label: "Material", icon: Gem, onClick: onMaterial },
+    { label: "Base", icon: Circle, onClick: onBase },
     { label: "AI Charm", icon: Sparkles, onClick: onAiCharm },
     { label: "Preview", icon: Eye, onClick: onPreview },
   ];
@@ -23,7 +26,7 @@ export function StudioToolbar({
       className="sticky bottom-0 z-30 border-t border-graphite/10 bg-ivory/95 backdrop-blur-md"
       style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
     >
-      <div className="mx-auto grid max-w-lg grid-cols-4">
+      <div className="mx-auto grid max-w-lg grid-cols-5">
         {items.map(({ label, icon: Icon, onClick }) => (
           <button
             key={label}

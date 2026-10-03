@@ -1,0 +1,4562 @@
+[
+  {
+    "id": "M_001",
+    "sku": "M_001",
+    "sourceFile": "M_001.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_001.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 28,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_002",
+    "sku": "M_002",
+    "sourceFile": "M_002.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_002.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 27,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_003",
+    "sku": "M_003",
+    "sourceFile": "M_003.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_003.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 27,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_004",
+    "sku": "M_004",
+    "sourceFile": "M_004.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_004.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 50,
+      "height": 66
+    }
+  },
+  {
+    "id": "M_005",
+    "sku": "M_005",
+    "sourceFile": "M_005.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_005.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 50,
+      "height": 66
+    }
+  },
+  {
+    "id": "M_006",
+    "sku": "M_006",
+    "sourceFile": "M_006.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_006.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 70,
+      "height": 84
+    }
+  },
+  {
+    "id": "M_007",
+    "sku": "M_007",
+    "sourceFile": "M_007.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_007.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 70,
+      "height": 84
+    }
+  },
+  {
+    "id": "M_008",
+    "sku": "M_008",
+    "sourceFile": "M_008.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_008.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 52,
+      "height": 124
+    }
+  },
+  {
+    "id": "M_009",
+    "sku": "M_009",
+    "sourceFile": "M_009.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_009.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 90,
+      "height": 110
+    }
+  },
+  {
+    "id": "M_010",
+    "sku": "M_010",
+    "sourceFile": "M_010.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_010.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 78,
+      "height": 86
+    }
+  },
+  {
+    "id": "M_011",
+    "sku": "M_011",
+    "sourceFile": "M_011.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_011.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 56
+    }
+  },
+  {
+    "id": "M_012",
+    "sku": "M_012",
+    "sourceFile": "M_012.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_012.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 58
+    }
+  },
+  {
+    "id": "M_013",
+    "sku": "M_013",
+    "sourceFile": "M_013.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_013.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 58
+    }
+  },
+  {
+    "id": "M_014",
+    "sku": "M_014",
+    "sourceFile": "M_014.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_014.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 57
+    }
+  },
+  {
+    "id": "M_015",
+    "sku": "M_015",
+    "sourceFile": "M_015.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_015.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 58
+    }
+  },
+  {
+    "id": "M_016",
+    "sku": "M_016",
+    "sourceFile": "M_016.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_016.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 52,
+      "height": 64
+    }
+  },
+  {
+    "id": "M_017",
+    "sku": "M_017",
+    "sourceFile": "M_017.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_017.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 52,
+      "height": 64
+    }
+  },
+  {
+    "id": "M_018",
+    "sku": "M_018",
+    "sourceFile": "M_018.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_018.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 52,
+      "height": 64
+    }
+  },
+  {
+    "id": "M_019",
+    "sku": "M_019",
+    "sourceFile": "M_019.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_019.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 52,
+      "height": 64
+    }
+  },
+  {
+    "id": "M_020",
+    "sku": "M_020",
+    "sourceFile": "M_020.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_020.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 52,
+      "height": 64
+    }
+  },
+  {
+    "id": "M_021",
+    "sku": "M_021",
+    "sourceFile": "M_021.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_021.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 36,
+      "height": 47
+    }
+  },
+  {
+    "id": "M_022",
+    "sku": "M_022",
+    "sourceFile": "M_022.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_022.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 45,
+      "height": 56
+    }
+  },
+  {
+    "id": "M_023",
+    "sku": "M_023",
+    "sourceFile": "M_023.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_023.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 54,
+      "height": 66
+    }
+  },
+  {
+    "id": "M_024",
+    "sku": "M_024",
+    "sourceFile": "M_024.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_024.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 82
+    }
+  },
+  {
+    "id": "M_025",
+    "sku": "M_025",
+    "sourceFile": "M_025.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_025.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 75,
+      "height": 86
+    }
+  },
+  {
+    "id": "M_026",
+    "sku": "M_026",
+    "sourceFile": "M_026.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_026.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 37,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_027",
+    "sku": "M_027",
+    "sourceFile": "M_027.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_027.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 39,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_028",
+    "sku": "M_028",
+    "sourceFile": "M_028.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_028.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 38,
+      "height": 49
+    }
+  },
+  {
+    "id": "M_029",
+    "sku": "M_029",
+    "sourceFile": "M_029.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_029.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 40,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_030",
+    "sku": "M_030",
+    "sourceFile": "M_030.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_030.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 38,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_031",
+    "sku": "M_031",
+    "sourceFile": "M_031.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_031.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 39,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_032",
+    "sku": "M_032",
+    "sourceFile": "M_032.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_032.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 39,
+      "height": 49
+    }
+  },
+  {
+    "id": "M_033",
+    "sku": "M_033",
+    "sourceFile": "M_033.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_033.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 37,
+      "height": 48
+    }
+  },
+  {
+    "id": "M_034",
+    "sku": "M_034",
+    "sourceFile": "M_034.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_034.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 81,
+      "height": 108
+    }
+  },
+  {
+    "id": "M_035",
+    "sku": "M_035",
+    "sourceFile": "M_035.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_035.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 65
+    }
+  },
+  {
+    "id": "M_036",
+    "sku": "M_036",
+    "sourceFile": "M_036.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_036.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 53,
+      "height": 63
+    }
+  },
+  {
+    "id": "M_037",
+    "sku": "M_037",
+    "sourceFile": "M_037.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_037.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 40,
+      "height": 54
+    }
+  },
+  {
+    "id": "M_038",
+    "sku": "M_038",
+    "sourceFile": "M_038.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_038.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 21,
+      "height": 32
+    }
+  },
+  {
+    "id": "M_039",
+    "sku": "M_039",
+    "sourceFile": "M_039.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_039.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 20,
+      "height": 33
+    }
+  },
+  {
+    "id": "M_040",
+    "sku": "M_040",
+    "sourceFile": "M_040.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_040.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 26,
+      "height": 70
+    }
+  },
+  {
+    "id": "M_041",
+    "sku": "M_041",
+    "sourceFile": "M_041.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_041.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 12,
+      "height": 253
+    }
+  },
+  {
+    "id": "M_042",
+    "sku": "M_042",
+    "sourceFile": "M_042.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_042.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 12,
+      "height": 33
+    }
+  },
+  {
+    "id": "M_043",
+    "sku": "M_043",
+    "sourceFile": "M_043.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_043.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 15,
+      "height": 80
+    }
+  },
+  {
+    "id": "M_044",
+    "sku": "M_044",
+    "sourceFile": "M_044.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_044.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 63,
+      "height": 73
+    }
+  },
+  {
+    "id": "M_045",
+    "sku": "M_045",
+    "sourceFile": "M_045.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_045.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 82,
+      "height": 97
+    }
+  },
+  {
+    "id": "M_046",
+    "sku": "M_046",
+    "sourceFile": "M_046.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_046.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 28,
+      "height": 36
+    }
+  },
+  {
+    "id": "M_047",
+    "sku": "M_047",
+    "sourceFile": "M_047.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_047.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 26,
+      "height": 34
+    }
+  },
+  {
+    "id": "M_048",
+    "sku": "M_048",
+    "sourceFile": "M_048.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_048.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 39
+    }
+  },
+  {
+    "id": "M_049",
+    "sku": "M_049",
+    "sourceFile": "M_049.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_049.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 37,
+      "height": 66
+    }
+  },
+  {
+    "id": "M_050",
+    "sku": "M_050",
+    "sourceFile": "M_050.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_050.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 24,
+      "height": 65
+    }
+  },
+  {
+    "id": "M_051",
+    "sku": "M_051",
+    "sourceFile": "M_051.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_051.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 76
+    }
+  },
+  {
+    "id": "M_052",
+    "sku": "M_052",
+    "sourceFile": "M_052.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_052.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 8,
+      "height": 67
+    }
+  },
+  {
+    "id": "M_053",
+    "sku": "M_053",
+    "sourceFile": "M_053.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_053.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 68
+    }
+  },
+  {
+    "id": "M_054",
+    "sku": "M_054",
+    "sourceFile": "M_054.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_054.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 151,
+      "height": 247
+    }
+  },
+  {
+    "id": "M_055",
+    "sku": "M_055",
+    "sourceFile": "M_055.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_055.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 160,
+      "height": 285
+    }
+  },
+  {
+    "id": "M_056",
+    "sku": "M_056",
+    "sourceFile": "M_056.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_056.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 43,
+      "height": 53
+    }
+  },
+  {
+    "id": "M_057",
+    "sku": "M_057",
+    "sourceFile": "M_057.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_057.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 39,
+      "height": 54
+    }
+  },
+  {
+    "id": "M_058",
+    "sku": "M_058",
+    "sourceFile": "M_058.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_058.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 90
+    }
+  },
+  {
+    "id": "M_059",
+    "sku": "M_059",
+    "sourceFile": "M_059.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_059.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 69,
+      "height": 84
+    }
+  },
+  {
+    "id": "M_060",
+    "sku": "M_060",
+    "sourceFile": "M_060.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_060.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 73,
+      "height": 70
+    }
+  },
+  {
+    "id": "M_061",
+    "sku": "M_061",
+    "sourceFile": "M_061.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_061.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 18,
+      "height": 73
+    }
+  },
+  {
+    "id": "M_062",
+    "sku": "M_062",
+    "sourceFile": "M_062.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_062.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 29,
+      "height": 41
+    }
+  },
+  {
+    "id": "M_063",
+    "sku": "M_063",
+    "sourceFile": "M_063.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_063.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 38
+    }
+  },
+  {
+    "id": "M_064",
+    "sku": "M_064",
+    "sourceFile": "M_064.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_064.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 41
+    }
+  },
+  {
+    "id": "M_065",
+    "sku": "M_065",
+    "sourceFile": "M_065.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_065.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 38
+    }
+  },
+  {
+    "id": "M_066",
+    "sku": "M_066",
+    "sourceFile": "M_066.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_066.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 41,
+      "height": 41
+    }
+  },
+  {
+    "id": "M_067",
+    "sku": "M_067",
+    "sourceFile": "M_067.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_067.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 42,
+      "height": 53
+    }
+  },
+  {
+    "id": "M_068",
+    "sku": "M_068",
+    "sourceFile": "M_068.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_068.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 20,
+      "height": 110
+    }
+  },
+  {
+    "id": "M_069",
+    "sku": "M_069",
+    "sourceFile": "M_069.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_069.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 37
+    }
+  },
+  {
+    "id": "M_070",
+    "sku": "M_070",
+    "sourceFile": "M_070.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_070.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 16,
+      "height": 46
+    }
+  },
+  {
+    "id": "M_071",
+    "sku": "M_071",
+    "sourceFile": "M_071.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_071.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 55
+    }
+  },
+  {
+    "id": "M_072",
+    "sku": "M_072",
+    "sourceFile": "M_072.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_072.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 32,
+      "height": 59
+    }
+  },
+  {
+    "id": "M_073",
+    "sku": "M_073",
+    "sourceFile": "M_073.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_073.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 38,
+      "height": 63
+    }
+  },
+  {
+    "id": "M_074",
+    "sku": "M_074",
+    "sourceFile": "M_074.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_074.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 31,
+      "height": 59
+    }
+  },
+  {
+    "id": "M_075",
+    "sku": "M_075",
+    "sourceFile": "M_075.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_075.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 10,
+      "height": 61
+    }
+  },
+  {
+    "id": "M_076",
+    "sku": "M_076",
+    "sourceFile": "M_076.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_076.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 79,
+      "height": 93
+    }
+  },
+  {
+    "id": "M_077",
+    "sku": "M_077",
+    "sourceFile": "M_077.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_077.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 79,
+      "height": 93
+    }
+  },
+  {
+    "id": "M_078_02",
+    "sku": "M_078_02",
+    "sourceFile": "M_078_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_078_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 91,
+      "height": 91
+    }
+  },
+  {
+    "id": "M_079_01",
+    "sku": "M_079_01",
+    "sourceFile": "M_079_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_079_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 25,
+      "height": 86
+    }
+  },
+  {
+    "id": "M_079_02",
+    "sku": "M_079_02",
+    "sourceFile": "M_079_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_079_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 88,
+      "height": 87
+    }
+  },
+  {
+    "id": "M_080_02",
+    "sku": "M_080_02",
+    "sourceFile": "M_080_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_080_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 60
+    }
+  },
+  {
+    "id": "M_081_02",
+    "sku": "M_081_02",
+    "sourceFile": "M_081_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_081_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 102,
+      "height": 97
+    }
+  },
+  {
+    "id": "M_082_02",
+    "sku": "M_082_02",
+    "sourceFile": "M_082_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_082_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 147,
+      "height": 156
+    }
+  },
+  {
+    "id": "M_083_02",
+    "sku": "M_083_02",
+    "sourceFile": "M_083_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_083_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 82,
+      "height": 82
+    }
+  },
+  {
+    "id": "M_084_01",
+    "sku": "M_084_01",
+    "sourceFile": "M_084_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_084_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 50,
+      "height": 55
+    }
+  },
+  {
+    "id": "M_085_01",
+    "sku": "M_085_01",
+    "sourceFile": "M_085_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_085_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 50,
+      "height": 54
+    }
+  },
+  {
+    "id": "M_086_01",
+    "sku": "M_086_01",
+    "sourceFile": "M_086_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_086_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 67,
+      "height": 67
+    }
+  },
+  {
+    "id": "M_087_01",
+    "sku": "M_087_01",
+    "sourceFile": "M_087_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_087_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 47,
+      "height": 46
+    }
+  },
+  {
+    "id": "M_087_02",
+    "sku": "M_087_02",
+    "sourceFile": "M_087_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_087_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 60,
+      "height": 51
+    }
+  },
+  {
+    "id": "M_088_02",
+    "sku": "M_088_02",
+    "sourceFile": "M_088_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_088_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 98,
+      "height": 95
+    }
+  },
+  {
+    "id": "M_089_02",
+    "sku": "M_089_02",
+    "sourceFile": "M_089_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_089_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 146,
+      "height": 148
+    }
+  },
+  {
+    "id": "M_090_02",
+    "sku": "M_090_02",
+    "sourceFile": "M_090_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_090_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 98,
+      "height": 103
+    }
+  },
+  {
+    "id": "M_091_02",
+    "sku": "M_091_02",
+    "sourceFile": "M_091_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_091_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 64,
+      "height": 87
+    }
+  },
+  {
+    "id": "M_092_02",
+    "sku": "M_092_02",
+    "sourceFile": "M_092_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_092_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 88,
+      "height": 88
+    }
+  },
+  {
+    "id": "M_093_02",
+    "sku": "M_093_02",
+    "sourceFile": "M_093_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_093_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 66
+    }
+  },
+  {
+    "id": "M_094_02",
+    "sku": "M_094_02",
+    "sourceFile": "M_094_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_094_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 47,
+      "height": 51
+    }
+  },
+  {
+    "id": "M_095_02",
+    "sku": "M_095_02",
+    "sourceFile": "M_095_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_095_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 77
+    }
+  },
+  {
+    "id": "M_096_02",
+    "sku": "M_096_02",
+    "sourceFile": "M_096_02.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_096_02.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 58,
+      "height": 60
+    }
+  },
+  {
+    "id": "M_097_01",
+    "sku": "M_097_01",
+    "sourceFile": "M_097_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_097_01.png",
+    "category": "connecting",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 8,
+      "height": 57
+    }
+  },
+  {
+    "id": "M_098_01",
+    "sku": "M_098_01",
+    "sourceFile": "M_098_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_098_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 12,
+      "height": 59
+    }
+  },
+  {
+    "id": "M_099_01",
+    "sku": "M_099_01",
+    "sourceFile": "M_099_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_099_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 47,
+      "height": 46
+    }
+  },
+  {
+    "id": "M_100_01",
+    "sku": "M_100_01",
+    "sourceFile": "M_100_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_100_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 19,
+      "height": 80
+    }
+  },
+  {
+    "id": "M_101_01",
+    "sku": "M_101_01",
+    "sourceFile": "M_101_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_101_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 42,
+      "height": 41
+    }
+  },
+  {
+    "id": "M_102_01",
+    "sku": "M_102_01",
+    "sourceFile": "M_102_01.png",
+    "sourceFolder": "main",
+    "imageUrl": "/parts/main/M_102_01.png",
+    "category": "base",
+    "reviewStatus": "manually_reviewed",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 44,
+      "height": 46
+    }
+  },
+  {
+    "id": "S_001",
+    "sku": "S_001",
+    "sourceFile": "S_001.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_001.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 129,
+      "height": 139
+    }
+  },
+  {
+    "id": "S_002",
+    "sku": "S_002",
+    "sourceFile": "S_002.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_002.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 58,
+      "height": 226
+    }
+  },
+  {
+    "id": "S_003",
+    "sku": "S_003",
+    "sourceFile": "S_003.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_003.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 38,
+      "height": 128
+    }
+  },
+  {
+    "id": "S_004",
+    "sku": "S_004",
+    "sourceFile": "S_004.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_004.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 49,
+      "height": 66
+    }
+  },
+  {
+    "id": "S_005",
+    "sku": "S_005",
+    "sourceFile": "S_005.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_005.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 45,
+      "height": 101
+    }
+  },
+  {
+    "id": "S_006",
+    "sku": "S_006",
+    "sourceFile": "S_006.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_006.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 102,
+      "height": 100
+    }
+  },
+  {
+    "id": "S_007",
+    "sku": "S_007",
+    "sourceFile": "S_007.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_007.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 71,
+      "height": 170
+    }
+  },
+  {
+    "id": "S_008",
+    "sku": "S_008",
+    "sourceFile": "S_008.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_008.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 78,
+      "height": 173
+    }
+  },
+  {
+    "id": "S_009",
+    "sku": "S_009",
+    "sourceFile": "S_009.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_009.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 72,
+      "height": 172
+    }
+  },
+  {
+    "id": "S_010",
+    "sku": "S_010",
+    "sourceFile": "S_010.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_010.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 167
+    }
+  },
+  {
+    "id": "S_011",
+    "sku": "S_011",
+    "sourceFile": "S_011.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_011.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 59,
+      "height": 60
+    }
+  },
+  {
+    "id": "S_012",
+    "sku": "S_012",
+    "sourceFile": "S_012.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_012.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 60,
+      "height": 57
+    }
+  },
+  {
+    "id": "S_013",
+    "sku": "S_013",
+    "sourceFile": "S_013.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_013.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 58,
+      "height": 59
+    }
+  },
+  {
+    "id": "S_014",
+    "sku": "S_014",
+    "sourceFile": "S_014.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_014.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 59
+    }
+  },
+  {
+    "id": "S_015",
+    "sku": "S_015",
+    "sourceFile": "S_015.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_015.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 33,
+      "height": 44
+    }
+  },
+  {
+    "id": "S_016",
+    "sku": "S_016",
+    "sourceFile": "S_016.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_016.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 42,
+      "height": 59
+    }
+  },
+  {
+    "id": "S_017",
+    "sku": "S_017",
+    "sourceFile": "S_017.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_017.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 42
+    }
+  },
+  {
+    "id": "S_018",
+    "sku": "S_018",
+    "sourceFile": "S_018.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_018.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 38,
+      "height": 51
+    }
+  },
+  {
+    "id": "S_019",
+    "sku": "S_019",
+    "sourceFile": "S_019.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_019.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 46,
+      "height": 61
+    }
+  },
+  {
+    "id": "S_020",
+    "sku": "S_020",
+    "sourceFile": "S_020.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_020.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 57,
+      "height": 71
+    }
+  },
+  {
+    "id": "S_021",
+    "sku": "S_021",
+    "sourceFile": "S_021.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_021.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 74,
+      "height": 91
+    }
+  },
+  {
+    "id": "S_022",
+    "sku": "S_022",
+    "sourceFile": "S_022.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_022.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 74,
+      "height": 91
+    }
+  },
+  {
+    "id": "S_023",
+    "sku": "S_023",
+    "sourceFile": "S_023.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_023.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 65,
+      "height": 66
+    }
+  },
+  {
+    "id": "S_024",
+    "sku": "S_024",
+    "sourceFile": "S_024.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_024.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 65,
+      "height": 65
+    }
+  },
+  {
+    "id": "S_025",
+    "sku": "S_025",
+    "sourceFile": "S_025.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_025.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 39,
+      "height": 43
+    }
+  },
+  {
+    "id": "S_026",
+    "sku": "S_026",
+    "sourceFile": "S_026.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_026.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 88,
+      "height": 92
+    }
+  },
+  {
+    "id": "S_027",
+    "sku": "S_027",
+    "sourceFile": "S_027.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_027.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 59,
+      "height": 64
+    }
+  },
+  {
+    "id": "S_028",
+    "sku": "S_028",
+    "sourceFile": "S_028.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_028.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 49,
+      "height": 65
+    }
+  },
+  {
+    "id": "S_029",
+    "sku": "S_029",
+    "sourceFile": "S_029.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_029.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 73,
+      "height": 94
+    }
+  },
+  {
+    "id": "S_030",
+    "sku": "S_030",
+    "sourceFile": "S_030.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_030.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 54,
+      "height": 72
+    }
+  },
+  {
+    "id": "S_031",
+    "sku": "S_031",
+    "sourceFile": "S_031.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_031.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 198
+    }
+  },
+  {
+    "id": "S_032",
+    "sku": "S_032",
+    "sourceFile": "S_032.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_032.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 79,
+      "height": 88
+    }
+  },
+  {
+    "id": "S_033",
+    "sku": "S_033",
+    "sourceFile": "S_033.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_033.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 60,
+      "height": 97
+    }
+  },
+  {
+    "id": "S_034",
+    "sku": "S_034",
+    "sourceFile": "S_034.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_034.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 82,
+      "height": 87
+    }
+  },
+  {
+    "id": "S_035",
+    "sku": "S_035",
+    "sourceFile": "S_035.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_035.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 60,
+      "height": 181
+    }
+  },
+  {
+    "id": "S_036",
+    "sku": "S_036",
+    "sourceFile": "S_036.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_036.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 84,
+      "height": 94
+    }
+  },
+  {
+    "id": "S_037",
+    "sku": "S_037",
+    "sourceFile": "S_037.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_037.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 63,
+      "height": 73
+    }
+  },
+  {
+    "id": "S_038",
+    "sku": "S_038",
+    "sourceFile": "S_038.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_038.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 64,
+      "height": 90
+    }
+  },
+  {
+    "id": "S_039",
+    "sku": "S_039",
+    "sourceFile": "S_039.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_039.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 113,
+      "height": 121
+    }
+  },
+  {
+    "id": "S_040",
+    "sku": "S_040",
+    "sourceFile": "S_040.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_040.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 97,
+      "height": 107
+    }
+  },
+  {
+    "id": "S_041",
+    "sku": "S_041",
+    "sourceFile": "S_041.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_041.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 94,
+      "height": 109
+    }
+  },
+  {
+    "id": "S_042",
+    "sku": "S_042",
+    "sourceFile": "S_042.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_042.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 37,
+      "height": 173
+    }
+  },
+  {
+    "id": "S_043",
+    "sku": "S_043",
+    "sourceFile": "S_043.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_043.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 82,
+      "height": 83
+    }
+  },
+  {
+    "id": "S_044",
+    "sku": "S_044",
+    "sourceFile": "S_044.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_044.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 80,
+      "height": 129
+    }
+  },
+  {
+    "id": "S_045",
+    "sku": "S_045",
+    "sourceFile": "S_045.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_045.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 68,
+      "height": 79
+    }
+  },
+  {
+    "id": "S_046",
+    "sku": "S_046",
+    "sourceFile": "S_046.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_046.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 37,
+      "height": 49
+    }
+  },
+  {
+    "id": "S_047",
+    "sku": "S_047",
+    "sourceFile": "S_047.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_047.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 48,
+      "height": 60
+    }
+  },
+  {
+    "id": "S_048",
+    "sku": "S_048",
+    "sourceFile": "S_048.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_048.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 33,
+      "height": 53
+    }
+  },
+  {
+    "id": "S_049",
+    "sku": "S_049",
+    "sourceFile": "S_049.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_049.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 37,
+      "height": 139
+    }
+  },
+  {
+    "id": "S_050",
+    "sku": "S_050",
+    "sourceFile": "S_050.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_050.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 45,
+      "height": 75
+    }
+  },
+  {
+    "id": "S_051",
+    "sku": "S_051",
+    "sourceFile": "S_051.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_051.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 40,
+      "height": 101
+    }
+  },
+  {
+    "id": "S_052",
+    "sku": "S_052",
+    "sourceFile": "S_052.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_052.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 73,
+      "height": 106
+    }
+  },
+  {
+    "id": "S_053",
+    "sku": "S_053",
+    "sourceFile": "S_053.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_053.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 36
+    }
+  },
+  {
+    "id": "S_054",
+    "sku": "S_054",
+    "sourceFile": "S_054.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_054.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 49,
+      "height": 53
+    }
+  },
+  {
+    "id": "S_055",
+    "sku": "S_055",
+    "sourceFile": "S_055.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_055.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 89,
+      "height": 106
+    }
+  },
+  {
+    "id": "S_056",
+    "sku": "S_056",
+    "sourceFile": "S_056.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_056.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 85,
+      "height": 94
+    }
+  },
+  {
+    "id": "S_057",
+    "sku": "S_057",
+    "sourceFile": "S_057.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_057.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 85,
+      "height": 94
+    }
+  },
+  {
+    "id": "S_058",
+    "sku": "S_058",
+    "sourceFile": "S_058.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_058.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 54,
+      "height": 86
+    }
+  },
+  {
+    "id": "S_059",
+    "sku": "S_059",
+    "sourceFile": "S_059.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_059.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 66,
+      "height": 74
+    }
+  },
+  {
+    "id": "S_060",
+    "sku": "S_060",
+    "sourceFile": "S_060.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_060.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 43,
+      "height": 76
+    }
+  },
+  {
+    "id": "S_061",
+    "sku": "S_061",
+    "sourceFile": "S_061.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_061.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 48,
+      "height": 53
+    }
+  },
+  {
+    "id": "S_062",
+    "sku": "S_062",
+    "sourceFile": "S_062.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_062.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 45,
+      "height": 90
+    }
+  },
+  {
+    "id": "S_063",
+    "sku": "S_063",
+    "sourceFile": "S_063.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_063.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 66,
+      "height": 225
+    }
+  },
+  {
+    "id": "S_064",
+    "sku": "S_064",
+    "sourceFile": "S_064.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_064.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 100
+    }
+  },
+  {
+    "id": "S_065",
+    "sku": "S_065",
+    "sourceFile": "S_065.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_065.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 117,
+      "height": 117
+    }
+  },
+  {
+    "id": "S_066",
+    "sku": "S_066",
+    "sourceFile": "S_066.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_066.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 39,
+      "height": 124
+    }
+  },
+  {
+    "id": "S_067",
+    "sku": "S_067",
+    "sourceFile": "S_067.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_067.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 56,
+      "height": 59
+    }
+  },
+  {
+    "id": "S_068",
+    "sku": "S_068",
+    "sourceFile": "S_068.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_068.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 102
+    }
+  },
+  {
+    "id": "S_069-W",
+    "sku": "S_069-W",
+    "sourceFile": "S_069-W.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_069-W.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 107,
+      "height": 110
+    }
+  },
+  {
+    "id": "S_070",
+    "sku": "S_070",
+    "sourceFile": "S_070.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_070.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 38,
+      "height": 70
+    }
+  },
+  {
+    "id": "S_071",
+    "sku": "S_071",
+    "sourceFile": "S_071.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_071.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 57,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_072",
+    "sku": "S_072",
+    "sourceFile": "S_072.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_072.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 56,
+      "height": 52
+    }
+  },
+  {
+    "id": "S_073",
+    "sku": "S_073",
+    "sourceFile": "S_073.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_073.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 57,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_074",
+    "sku": "S_074",
+    "sourceFile": "S_074.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_074.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 56,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_075",
+    "sku": "S_075",
+    "sourceFile": "S_075.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_075.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 57,
+      "height": 52
+    }
+  },
+  {
+    "id": "S_076",
+    "sku": "S_076",
+    "sourceFile": "S_076.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_076.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 31,
+      "height": 41
+    }
+  },
+  {
+    "id": "S_077",
+    "sku": "S_077",
+    "sourceFile": "S_077.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_077.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 29,
+      "height": 33
+    }
+  },
+  {
+    "id": "S_078",
+    "sku": "S_078",
+    "sourceFile": "S_078.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_078.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 38,
+      "height": 36
+    }
+  },
+  {
+    "id": "S_079",
+    "sku": "S_079",
+    "sourceFile": "S_079.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_079.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 37,
+      "height": 35
+    }
+  },
+  {
+    "id": "S_080",
+    "sku": "S_080",
+    "sourceFile": "S_080.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_080.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 26,
+      "height": 35
+    }
+  },
+  {
+    "id": "S_081",
+    "sku": "S_081",
+    "sourceFile": "S_081.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_081.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 57,
+      "height": 86
+    }
+  },
+  {
+    "id": "S_082",
+    "sku": "S_082",
+    "sourceFile": "S_082.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_082.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 48,
+      "height": 67
+    }
+  },
+  {
+    "id": "S_083",
+    "sku": "S_083",
+    "sourceFile": "S_083.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_083.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 72,
+      "height": 109
+    }
+  },
+  {
+    "id": "S_084",
+    "sku": "S_084",
+    "sourceFile": "S_084.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_084.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 77,
+      "height": 91
+    }
+  },
+  {
+    "id": "S_085",
+    "sku": "S_085",
+    "sourceFile": "S_085.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_085.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 98,
+      "height": 128
+    }
+  },
+  {
+    "id": "S_086",
+    "sku": "S_086",
+    "sourceFile": "S_086.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_086.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 136,
+      "height": 90
+    }
+  },
+  {
+    "id": "S_087",
+    "sku": "S_087",
+    "sourceFile": "S_087.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_087.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 143,
+      "height": 92
+    }
+  },
+  {
+    "id": "S_088",
+    "sku": "S_088",
+    "sourceFile": "S_088.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_088.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 78,
+      "height": 70
+    }
+  },
+  {
+    "id": "S_089",
+    "sku": "S_089",
+    "sourceFile": "S_089.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_089.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 118,
+      "height": 96
+    }
+  },
+  {
+    "id": "S_090",
+    "sku": "S_090",
+    "sourceFile": "S_090.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_090.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 115
+    }
+  },
+  {
+    "id": "S_091",
+    "sku": "S_091",
+    "sourceFile": "S_091.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_091.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 116
+    }
+  },
+  {
+    "id": "S_092",
+    "sku": "S_092",
+    "sourceFile": "S_092.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_092.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 59,
+      "height": 124
+    }
+  },
+  {
+    "id": "S_093",
+    "sku": "S_093",
+    "sourceFile": "S_093.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_093.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 119
+    }
+  },
+  {
+    "id": "S_094",
+    "sku": "S_094",
+    "sourceFile": "S_094.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_094.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 79,
+      "height": 96
+    }
+  },
+  {
+    "id": "S_095",
+    "sku": "S_095",
+    "sourceFile": "S_095.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_095.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 79,
+      "height": 94
+    }
+  },
+  {
+    "id": "S_096",
+    "sku": "S_096",
+    "sourceFile": "S_096.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_096.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 45,
+      "height": 58
+    }
+  },
+  {
+    "id": "S_097",
+    "sku": "S_097",
+    "sourceFile": "S_097.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_097.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 38,
+      "height": 56
+    }
+  },
+  {
+    "id": "S_098",
+    "sku": "S_098",
+    "sourceFile": "S_098.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_098.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 25,
+      "height": 36
+    }
+  },
+  {
+    "id": "S_099",
+    "sku": "S_099",
+    "sourceFile": "S_099.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_099.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 28,
+      "height": 41
+    }
+  },
+  {
+    "id": "S_100",
+    "sku": "S_100",
+    "sourceFile": "S_100.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_100.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 57,
+      "height": 103
+    }
+  },
+  {
+    "id": "S_101",
+    "sku": "S_101",
+    "sourceFile": "S_101.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_101.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 176,
+      "height": 193
+    }
+  },
+  {
+    "id": "S_102",
+    "sku": "S_102",
+    "sourceFile": "S_102.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_102.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 157
+    }
+  },
+  {
+    "id": "S_103",
+    "sku": "S_103",
+    "sourceFile": "S_103.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_103.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 157
+    }
+  },
+  {
+    "id": "S_104",
+    "sku": "S_104",
+    "sourceFile": "S_104.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_104.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 47
+    }
+  },
+  {
+    "id": "S_105",
+    "sku": "S_105",
+    "sourceFile": "S_105.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_105.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 42,
+      "height": 56
+    }
+  },
+  {
+    "id": "S_106",
+    "sku": "S_106",
+    "sourceFile": "S_106.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_106.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 135,
+      "height": 188
+    }
+  },
+  {
+    "id": "S_107",
+    "sku": "S_107",
+    "sourceFile": "S_107.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_107.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 25,
+      "height": 36
+    }
+  },
+  {
+    "id": "S_108",
+    "sku": "S_108",
+    "sourceFile": "S_108.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_108.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 56,
+      "height": 78
+    }
+  },
+  {
+    "id": "S_109",
+    "sku": "S_109",
+    "sourceFile": "S_109.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_109.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 60,
+      "height": 84
+    }
+  },
+  {
+    "id": "S_110",
+    "sku": "S_110",
+    "sourceFile": "S_110.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_110.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 50,
+      "height": 152
+    }
+  },
+  {
+    "id": "S_111",
+    "sku": "S_111",
+    "sourceFile": "S_111.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_111.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 31,
+      "height": 40
+    }
+  },
+  {
+    "id": "S_112",
+    "sku": "S_112",
+    "sourceFile": "S_112.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_112.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 28,
+      "height": 39
+    }
+  },
+  {
+    "id": "S_113",
+    "sku": "S_113",
+    "sourceFile": "S_113.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_113.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 62,
+      "height": 48
+    }
+  },
+  {
+    "id": "S_114",
+    "sku": "S_114",
+    "sourceFile": "S_114.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_114.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 100,
+      "height": 107
+    }
+  },
+  {
+    "id": "S_115",
+    "sku": "S_115",
+    "sourceFile": "S_115.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_115.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 75,
+      "height": 98
+    }
+  },
+  {
+    "id": "S_116",
+    "sku": "S_116",
+    "sourceFile": "S_116.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_116.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 27,
+      "height": 373
+    }
+  },
+  {
+    "id": "S_117",
+    "sku": "S_117",
+    "sourceFile": "S_117.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_117.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 44,
+      "height": 317
+    }
+  },
+  {
+    "id": "S_118",
+    "sku": "S_118",
+    "sourceFile": "S_118.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_118.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 66,
+      "height": 104
+    }
+  },
+  {
+    "id": "S_119",
+    "sku": "S_119",
+    "sourceFile": "S_119.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_119.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 83,
+      "height": 217
+    }
+  },
+  {
+    "id": "S_120",
+    "sku": "S_120",
+    "sourceFile": "S_120.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_120.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 87,
+      "height": 207
+    }
+  },
+  {
+    "id": "S_121",
+    "sku": "S_121",
+    "sourceFile": "S_121.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_121.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 130,
+      "height": 131
+    }
+  },
+  {
+    "id": "S_122",
+    "sku": "S_122",
+    "sourceFile": "S_122.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_122.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 64,
+      "height": 108
+    }
+  },
+  {
+    "id": "S_123",
+    "sku": "S_123",
+    "sourceFile": "S_123.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_123.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 53,
+      "height": 59
+    }
+  },
+  {
+    "id": "S_124",
+    "sku": "S_124",
+    "sourceFile": "S_124.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_124.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 53,
+      "height": 67
+    }
+  },
+  {
+    "id": "S_125",
+    "sku": "S_125",
+    "sourceFile": "S_125.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_125.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 28,
+      "height": 44
+    }
+  },
+  {
+    "id": "S_126",
+    "sku": "S_126",
+    "sourceFile": "S_126.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_126.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 78,
+      "height": 277
+    }
+  },
+  {
+    "id": "S_127",
+    "sku": "S_127",
+    "sourceFile": "S_127.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_127.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 75,
+      "height": 182
+    }
+  },
+  {
+    "id": "S_128",
+    "sku": "S_128",
+    "sourceFile": "S_128.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_128.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 157,
+      "height": 138
+    }
+  },
+  {
+    "id": "S_129",
+    "sku": "S_129",
+    "sourceFile": "S_129.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_129.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 122
+    }
+  },
+  {
+    "id": "S_130",
+    "sku": "S_130",
+    "sourceFile": "S_130.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_130.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 60,
+      "height": 242
+    }
+  },
+  {
+    "id": "S_131",
+    "sku": "S_131",
+    "sourceFile": "S_131.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_131.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 50
+    }
+  },
+  {
+    "id": "S_132",
+    "sku": "S_132",
+    "sourceFile": "S_132.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_132.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 16,
+      "height": 227
+    }
+  },
+  {
+    "id": "S_133",
+    "sku": "S_133",
+    "sourceFile": "S_133.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_133.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 25,
+      "height": 147
+    }
+  },
+  {
+    "id": "S_134",
+    "sku": "S_134",
+    "sourceFile": "S_134.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_134.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 63,
+      "height": 132
+    }
+  },
+  {
+    "id": "S_135",
+    "sku": "S_135",
+    "sourceFile": "S_135.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_135.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 104,
+      "height": 271
+    }
+  },
+  {
+    "id": "S_136",
+    "sku": "S_136",
+    "sourceFile": "S_136.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_136.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 49,
+      "height": 60
+    }
+  },
+  {
+    "id": "S_137",
+    "sku": "S_137",
+    "sourceFile": "S_137.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_137.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 46,
+      "height": 66
+    }
+  },
+  {
+    "id": "S_138",
+    "sku": "S_138",
+    "sourceFile": "S_138.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_138.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 127,
+      "height": 153
+    }
+  },
+  {
+    "id": "S_139",
+    "sku": "S_139",
+    "sourceFile": "S_139.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_139.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 39,
+      "height": 72
+    }
+  },
+  {
+    "id": "S_140",
+    "sku": "S_140",
+    "sourceFile": "S_140.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_140.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 42,
+      "height": 68
+    }
+  },
+  {
+    "id": "S_141",
+    "sku": "S_141",
+    "sourceFile": "S_141.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_141.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 93,
+      "height": 105
+    }
+  },
+  {
+    "id": "S_142",
+    "sku": "S_142",
+    "sourceFile": "S_142.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_142.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 81,
+      "height": 125
+    }
+  },
+  {
+    "id": "S_143",
+    "sku": "S_143",
+    "sourceFile": "S_143.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_143.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 81,
+      "height": 125
+    }
+  },
+  {
+    "id": "S_144",
+    "sku": "S_144",
+    "sourceFile": "S_144.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_144.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 81,
+      "height": 125
+    }
+  },
+  {
+    "id": "S_145",
+    "sku": "S_145",
+    "sourceFile": "S_145.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_145.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 81,
+      "height": 125
+    }
+  },
+  {
+    "id": "S_146",
+    "sku": "S_146",
+    "sourceFile": "S_146.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_146.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 70,
+      "height": 81
+    }
+  },
+  {
+    "id": "S_147",
+    "sku": "S_147",
+    "sourceFile": "S_147.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_147.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 70,
+      "height": 82
+    }
+  },
+  {
+    "id": "S_148",
+    "sku": "S_148",
+    "sourceFile": "S_148.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_148.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 70,
+      "height": 82
+    }
+  },
+  {
+    "id": "S_149",
+    "sku": "S_149",
+    "sourceFile": "S_149.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_149.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 71,
+      "height": 83
+    }
+  },
+  {
+    "id": "S_150",
+    "sku": "S_150",
+    "sourceFile": "S_150.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_150.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 71,
+      "height": 84
+    }
+  },
+  {
+    "id": "S_151",
+    "sku": "S_151",
+    "sourceFile": "S_151.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_151.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 39,
+      "height": 175
+    }
+  },
+  {
+    "id": "S_152",
+    "sku": "S_152",
+    "sourceFile": "S_152.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_152.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 53,
+      "height": 104
+    }
+  },
+  {
+    "id": "S_153",
+    "sku": "S_153",
+    "sourceFile": "S_153.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_153.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 93,
+      "height": 93
+    }
+  },
+  {
+    "id": "S_154",
+    "sku": "S_154",
+    "sourceFile": "S_154.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_154.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 47,
+      "height": 61
+    }
+  },
+  {
+    "id": "S_155",
+    "sku": "S_155",
+    "sourceFile": "S_155.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_155.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 48,
+      "height": 60
+    }
+  },
+  {
+    "id": "S_156",
+    "sku": "S_156",
+    "sourceFile": "S_156.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_156.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 47,
+      "height": 56
+    }
+  },
+  {
+    "id": "S_157",
+    "sku": "S_157",
+    "sourceFile": "S_157.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_157.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 46,
+      "height": 67
+    }
+  },
+  {
+    "id": "S_158",
+    "sku": "S_158",
+    "sourceFile": "S_158.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_158.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 47,
+      "height": 57
+    }
+  },
+  {
+    "id": "S_159",
+    "sku": "S_159",
+    "sourceFile": "S_159.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_159.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 47,
+      "height": 59
+    }
+  },
+  {
+    "id": "S_160",
+    "sku": "S_160",
+    "sourceFile": "S_160.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_160.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 51,
+      "height": 69
+    }
+  },
+  {
+    "id": "S_161",
+    "sku": "S_161",
+    "sourceFile": "S_161.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_161.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 65,
+      "height": 78
+    }
+  },
+  {
+    "id": "S_162",
+    "sku": "S_162",
+    "sourceFile": "S_162.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_162.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 86
+    }
+  },
+  {
+    "id": "S_163",
+    "sku": "S_163",
+    "sourceFile": "S_163.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_163.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 65,
+      "height": 79
+    }
+  },
+  {
+    "id": "S_164",
+    "sku": "S_164",
+    "sourceFile": "S_164.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_164.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 66,
+      "height": 78
+    }
+  },
+  {
+    "id": "S_165",
+    "sku": "S_165",
+    "sourceFile": "S_165.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_165.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 61,
+      "height": 119
+    }
+  },
+  {
+    "id": "S_166",
+    "sku": "S_166",
+    "sourceFile": "S_166.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_166.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 52,
+      "height": 102
+    }
+  },
+  {
+    "id": "S_167",
+    "sku": "S_167",
+    "sourceFile": "S_167.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_167.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 101,
+      "height": 222
+    }
+  },
+  {
+    "id": "S_168",
+    "sku": "S_168",
+    "sourceFile": "S_168.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_168.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 29,
+      "height": 59
+    }
+  },
+  {
+    "id": "S_169",
+    "sku": "S_169",
+    "sourceFile": "S_169.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_169.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 48,
+      "height": 60
+    }
+  },
+  {
+    "id": "S_170",
+    "sku": "S_170",
+    "sourceFile": "S_170.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_170.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 48,
+      "height": 60
+    }
+  },
+  {
+    "id": "S_171",
+    "sku": "S_171",
+    "sourceFile": "S_171.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_171.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 58,
+      "height": 72
+    }
+  },
+  {
+    "id": "S_172",
+    "sku": "S_172",
+    "sourceFile": "S_172.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_172.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 58,
+      "height": 73
+    }
+  },
+  {
+    "id": "S_173",
+    "sku": "S_173",
+    "sourceFile": "S_173.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_173.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 54,
+      "height": 72
+    }
+  },
+  {
+    "id": "S_174",
+    "sku": "S_174",
+    "sourceFile": "S_174.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_174.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 33,
+      "height": 117
+    }
+  },
+  {
+    "id": "S_175",
+    "sku": "S_175",
+    "sourceFile": "S_175.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_175.png",
+    "category": "connecting",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 42,
+      "height": 145
+    }
+  },
+  {
+    "id": "S_176",
+    "sku": "S_176",
+    "sourceFile": "S_176.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_176.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 56,
+      "height": 55
+    }
+  },
+  {
+    "id": "S_177",
+    "sku": "S_177",
+    "sourceFile": "S_177.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_177.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 48,
+      "height": 49
+    }
+  },
+  {
+    "id": "S_178",
+    "sku": "S_178",
+    "sourceFile": "S_178.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_178.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 63
+    }
+  },
+  {
+    "id": "S_179",
+    "sku": "S_179",
+    "sourceFile": "S_179.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_179.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 84,
+      "height": 89
+    }
+  },
+  {
+    "id": "S_180",
+    "sku": "S_180",
+    "sourceFile": "S_180.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_180.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_181",
+    "sku": "S_181",
+    "sourceFile": "S_181.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_181.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 29,
+      "height": 55
+    }
+  },
+  {
+    "id": "S_182",
+    "sku": "S_182",
+    "sourceFile": "S_182.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_182.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 30,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_183",
+    "sku": "S_183",
+    "sourceFile": "S_183.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_183.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_184",
+    "sku": "S_184",
+    "sourceFile": "S_184.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_184.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_185",
+    "sku": "S_185",
+    "sourceFile": "S_185.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_185.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_186",
+    "sku": "S_186",
+    "sourceFile": "S_186.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_186.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 31,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_187",
+    "sku": "S_187",
+    "sourceFile": "S_187.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_187.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 35,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_188",
+    "sku": "S_188",
+    "sourceFile": "S_188.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_188.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_189",
+    "sku": "S_189",
+    "sourceFile": "S_189.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_189.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 54
+    }
+  },
+  {
+    "id": "S_190",
+    "sku": "S_190",
+    "sourceFile": "S_190.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_190.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 29,
+      "height": 53
+    }
+  },
+  {
+    "id": "S_191",
+    "sku": "S_191",
+    "sourceFile": "S_191.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_191.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 61,
+      "height": 62
+    }
+  },
+  {
+    "id": "S_192",
+    "sku": "S_192",
+    "sourceFile": "S_192.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_192.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 70,
+      "height": 77
+    }
+  },
+  {
+    "id": "S_193",
+    "sku": "S_193",
+    "sourceFile": "S_193.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_193.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 65,
+      "height": 72
+    }
+  },
+  {
+    "id": "S_194",
+    "sku": "S_194",
+    "sourceFile": "S_194.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_194.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 98
+    }
+  },
+  {
+    "id": "S_195",
+    "sku": "S_195",
+    "sourceFile": "S_195.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_195.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 34,
+      "height": 99
+    }
+  },
+  {
+    "id": "S_196",
+    "sku": "S_196",
+    "sourceFile": "S_196.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_196.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 66,
+      "height": 82
+    }
+  },
+  {
+    "id": "S_197",
+    "sku": "S_197",
+    "sourceFile": "S_197.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_197.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 90
+    }
+  },
+  {
+    "id": "S_198",
+    "sku": "S_198",
+    "sourceFile": "S_198.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_198.png",
+    "category": "charm",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 55,
+      "height": 125
+    }
+  },
+  {
+    "id": "S_199",
+    "sku": "S_199",
+    "sourceFile": "S_199.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_199.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 21,
+      "height": 43
+    }
+  },
+  {
+    "id": "S_200",
+    "sku": "S_200",
+    "sourceFile": "S_200.png",
+    "sourceFolder": "sub",
+    "imageUrl": "/parts/sub/S_200.png",
+    "category": "decoration",
+    "reviewStatus": "heuristic_unverified",
+    "canvasPixelWidth": 500,
+    "canvasPixelHeight": 400,
+    "visualFootprintPx": {
+      "width": 21,
+      "height": 43
+    }
+  }
+]

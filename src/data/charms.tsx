@@ -139,6 +139,20 @@ function InitialShape({ material, text }: CharmShapeProps) {
   );
 }
 
+/** Real catalog photo, shown at its own aspect ratio rather than forced into the circular vector-charm clip. */
+function PartImageShape({ imageUrl }: { imageUrl: string }) {
+  return (
+    <image
+      href={imageUrl}
+      x={-10}
+      y={-10}
+      width={20}
+      height={20}
+      preserveAspectRatio="xMidYMid meet"
+    />
+  );
+}
+
 function CustomShape({ material, assetUrl }: CharmShapeProps & { assetUrl?: string }) {
   return (
     <g>
@@ -203,11 +217,14 @@ export function CharmShape({
   material,
   text,
   customAssetUrl,
+  partImageUrl,
 }: {
   type: CharmType;
   material: MaterialType;
   text?: string;
   customAssetUrl?: string;
+  /** Resolved by the caller from `charm.partId` — this module stays decoupled from the catalog data. */
+  partImageUrl?: string;
 }) {
   switch (type) {
     case "heart":
@@ -224,6 +241,8 @@ export function CharmShape({
       return <InitialShape material={material} text={text} />;
     case "custom":
       return <CustomShape material={material} assetUrl={customAssetUrl} />;
+    case "part":
+      return partImageUrl ? <PartImageShape imageUrl={partImageUrl} /> : <GemShape material={material} />;
     default:
       return null;
   }

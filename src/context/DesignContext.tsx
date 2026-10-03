@@ -12,7 +12,11 @@ type DesignContextValue = {
   loadDesign: (design: JewelryDesign) => void;
   createFromConcept: (concept: JewelryConcept, story: string, sourceImage?: string) => JewelryDesign;
   setMaterial: (material: MaterialType) => void;
-  addCharm: (type: CharmType, options?: { text?: string; customAssetUrl?: string }) => { ok: boolean; message?: string };
+  addCharm: (
+    type: CharmType,
+    options?: { text?: string; customAssetUrl?: string; partId?: string },
+  ) => { ok: boolean; message?: string };
+  setBaseReference: (partId: string | null) => void;
   duplicateCharm: (id: string) => { ok: boolean; message?: string };
   updateCharm: (id: string, patch: Partial<CharmInstance>) => void;
   moveCharm: (id: string, attachmentPointId: string) => void;
@@ -95,7 +99,10 @@ export function DesignProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const addCharm = useCallback(
-    (type: CharmType, options?: { text?: string; customAssetUrl?: string }): { ok: boolean; message?: string } => {
+    (
+      type: CharmType,
+      options?: { text?: string; customAssetUrl?: string; partId?: string },
+    ): { ok: boolean; message?: string } => {
       let result: { ok: boolean; message?: string } = { ok: true };
 
       setCurrentDesign((prev) => {
@@ -117,6 +124,7 @@ export function DesignProvider({ children }: { children: ReactNode }) {
           material: prev.material,
           text: type === "initial" ? options?.text || "A" : undefined,
           customAssetUrl: type === "custom" ? options?.customAssetUrl : undefined,
+          partId: type === "part" ? options?.partId : undefined,
         };
 
         return { ...prev, charms: [...prev.charms, newCharm], updatedAt: new Date().toISOString() };
@@ -126,6 +134,14 @@ export function DesignProvider({ children }: { children: ReactNode }) {
     },
     [],
   );
+
+  const setBaseReference = useCallback((partId: string | null) => {
+    setCurrentDesign((prev) => ({
+      ...prev,
+      baseReferencePartId: partId ?? undefined,
+      updatedAt: new Date().toISOString(),
+    }));
+  }, []);
 
   const duplicateCharm = useCallback((id: string): { ok: boolean; message?: string } => {
     let result: { ok: boolean; message?: string } = { ok: true };
@@ -239,6 +255,7 @@ export function DesignProvider({ children }: { children: ReactNode }) {
       createFromConcept,
       setMaterial,
       addCharm,
+      setBaseReference,
       duplicateCharm,
       updateCharm,
       moveCharm,
@@ -254,6 +271,7 @@ export function DesignProvider({ children }: { children: ReactNode }) {
       createFromConcept,
       setMaterial,
       addCharm,
+      setBaseReference,
       duplicateCharm,
       updateCharm,
       moveCharm,
