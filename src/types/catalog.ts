@@ -17,6 +17,37 @@ export type PartCategory = "base" | "connecting" | "charm" | "decoration" | "unc
  */
 export type ReviewStatus = "manually_reviewed" | "heuristic_unverified" | "operator_confirmed";
 
+/** A point on a part's image, normalized 0–1 against the part's FULL original canvas (not the cropped display). */
+export type NormalizedPoint = { x: number; y: number };
+
+export type ChildAttachmentPoint = {
+  id: string;
+  point: NormalizedPoint;
+  /** Which part categories may hang from this point. Empty/undefined = not yet decided, nothing should auto-attach here. */
+  acceptsCategories?: PartCategory[];
+};
+
+export type AttachmentReviewStatus = "unset" | "manually_set";
+
+/**
+ * Where/how this part hangs and what can hang from it — kept separate from
+ * `category`'s ReviewStatus because "what kind of thing is this" and "exactly
+ * where does it connect" are confirmed by different means (a shape heuristic
+ * vs. a person clicking the image). `manually_set` here is the ONLY status
+ * the swing physics / snap-to-point editor will treat as a real connection —
+ * never inferred from the photo or from an AI image showing a loop.
+ */
+export type PartAttachment = {
+  /** Where THIS part hangs from its parent — absent for base findings, which don't hang from anything. */
+  attachmentPoint?: NormalizedPoint;
+  childAttachmentPoints?: ChildAttachmentPoint[];
+  /** Multiplier applied on top of the part's natural pixel size when displayed. */
+  displayScale?: number;
+  /** Resting rotation in degrees when the part hangs still, 0 = attachmentPoint directly above visual center. */
+  restAngle?: number;
+  reviewStatus: AttachmentReviewStatus;
+};
+
 export type Part = {
   id: string;
   sku: string;
@@ -31,6 +62,11 @@ export type Part = {
   canvasPixelWidth: number | null;
   canvasPixelHeight: number | null;
   visualFootprintPx: { width: number; height: number } | null;
+  /** Same alpha-channel bounding box as visualFootprintPx, normalized 0–1 against the full canvas — origin AND size, so attachment points can be transformed when the display crops to this box. */
+  visualBounds: { x: number; y: number; width: number; height: number } | null;
+
+  /** Present only for the small set of parts an operator (or the dev attachment-point editor) has actually set up for the combo/physics preview. Absent = this part can still be browsed/added to a flat-list design, but can't be hung with real swing physics yet. */
+  attachment?: PartAttachment;
 
   // Everything below is intentionally left undefined until an operator confirms
   // it — never inferred from the photo alone.
@@ -42,7 +78,6 @@ export type Part = {
   stock?: number | "in_stock" | "out_of_stock";
   /** Base ids this part is confirmed to physically attach to. Empty = not yet confirmed for any base. */
   compatibleBaseIds?: string[];
-  connectionPoints?: { id: string; x: number; y: number }[];
   maxQuantity?: number;
   weight?: number;
 };

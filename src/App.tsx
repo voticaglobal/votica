@@ -10,6 +10,8 @@ import { CharmReviewRequest } from "./pages/CharmReviewRequest";
 import { AccountRequests } from "./pages/AccountRequests";
 import { AdminRequests } from "./pages/admin/AdminRequests";
 import { AdminRequestDetail } from "./pages/admin/AdminRequestDetail";
+import { ComboStudio } from "./pages/ComboStudio";
+import { AttachmentEditor } from "./pages/dev/AttachmentEditor";
 import { CreatorOnboarding } from "./pages/CreatorOnboarding";
 import { CreatorStorefront } from "./pages/CreatorStorefront";
 import { CollectionPage } from "./pages/Collection";
@@ -34,6 +36,8 @@ function App() {
           <Route path="/account/requests" element={<AccountRequests />} />
           <Route path="/admin/requests" element={<AdminRequests />} />
           <Route path="/admin/requests/:id" element={<AdminRequestDetail />} />
+          <Route path="/combo" element={<ComboStudio />} />
+          <Route path="/dev/attachment-editor" element={<AttachmentEditor />} />
           <Route path="/creator/onboarding" element={<CreatorOnboarding />} />
           <Route path="/creator/:slug" element={<CreatorStorefront />} />
           <Route path="/collection/:slug" element={<CollectionPage />} />

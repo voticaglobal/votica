@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 export function Header() {
   const location = useLocation();
-  const isStudio = location.pathname.startsWith("/studio") || location.pathname.startsWith("/builder");
+  const isStudio = location.pathname.startsWith("/studio") || location.pathname.startsWith("/builder") || location.pathname.startsWith("/combo");
 
   if (isStudio) return null;
 
@@ -21,7 +21,7 @@ export function Header() {
           <Link to="/try-on" className="hover:text-graphite">
             Try It On
           </Link>
-          <Link to="/builder" className="hover:text-graphite">
+          <Link to="/combo" className="hover:text-graphite">
             Build From Parts
           </Link>
           <Link to="/creator/onboarding" className="hover:text-graphite">

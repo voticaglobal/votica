@@ -51,4 +51,5 @@ export const StorageKeys = {
   charmDesigns: "charm-designs",
   productionReviewRequests: "production-review-requests",
   quotes: "quotes",
+  partCombo: "part-combo",
 } as const;

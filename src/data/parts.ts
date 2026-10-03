@@ -1,4 +1,5 @@
 import raw from "./parts.generated.json";
+import { ATTACHMENT_OVERRIDES } from "./attachmentOverrides";
 import type { Part, PartCategory } from "../types/catalog";
 
 type RawPart = {
@@ -12,6 +13,7 @@ type RawPart = {
   canvasPixelWidth: number | null;
   canvasPixelHeight: number | null;
   visualFootprintPx: { width: number; height: number } | null;
+  visualBounds: { x: number; y: number; width: number; height: number } | null;
 };
 
 const CATEGORY_LABEL: Record<PartCategory, string> = {
@@ -38,7 +40,16 @@ export const PARTS_CATALOG: Part[] = (raw as RawPart[]).map((p) => ({
   canvasPixelWidth: p.canvasPixelWidth,
   canvasPixelHeight: p.canvasPixelHeight,
   visualFootprintPx: p.visualFootprintPx,
+  visualBounds: p.visualBounds,
+  attachment: ATTACHMENT_OVERRIDES[p.id],
 }));
+
+/** Parts with a real, manually-set attachment point — the only ones the combo/physics preview offers. */
+export function getAttachableParts(category?: PartCategory): Part[] {
+  return PARTS_CATALOG.filter(
+    (p) => p.attachment?.reviewStatus === "manually_set" && (!category || p.category === category),
+  );
+}
 
 export function getPart(id: string): Part | undefined {
   return PARTS_CATALOG.find((p) => p.id === id);
