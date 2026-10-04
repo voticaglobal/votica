@@ -60,7 +60,7 @@ export function ComboStudio() {
         </div>
         <Button size="sm" variant="outline" onClick={() => setEditMode((v) => !v)}>
           {editMode ? <Eye size={15} /> : <Pencil size={15} />}
-          {editMode ? "Preview" : "Edit"}
+          {editMode ? "Preview & swing" : "Edit"}
         </Button>
       </div>
 

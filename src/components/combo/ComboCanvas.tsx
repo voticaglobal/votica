@@ -1,8 +1,8 @@
 import { useMemo, useRef } from "react";
 import { Plus, ZoomIn, ZoomOut, PauseCircle, RotateCw } from "lucide-react";
 import { PartNodeView } from "./PartNodeView";
-import { usePartComboPhysics, type ComboPhysicsNode } from "../../hooks/usePartComboPhysics";
-import { toCropRelative, displaySizeForWidth } from "../../lib/partGeometry";
+import { usePartComboPhysics, type ComboPhysicsMode, type ComboPhysicsNode } from "../../hooks/usePartComboPhysics";
+import { toCropRelative, displaySizeForWidth, cropStyle } from "../../lib/partGeometry";
 import { getPart } from "../../data/parts";
 import { cn } from "../../lib/utils";
 import type { PartCombo } from "../../types/combo";
@@ -102,12 +102,13 @@ export function ComboCanvas({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [combo.nodes]);
 
+  const physicsMode: ComboPhysicsMode = !motionOn || prefersReducedMotion ? "off" : editMode ? "kick" : "live";
   const { reshake } = usePartComboPhysics({
     containerRef,
     anchorPx,
     nodes: physicsNodes,
     getNodeEl: (uid) => nodeElsRef.current.get(uid) ?? null,
-    enabled: !editMode && motionOn && !prefersReducedMotion,
+    mode: physicsMode,
   });
 
   // Open child-point "add here" markers: the hoop's slot if nothing uses it yet,
@@ -150,7 +151,7 @@ export function ComboCanvas({
                 src={hoopPart.imageUrl}
                 alt={hoopPart.name}
                 draggable={false}
-                style={{ position: "absolute", width: "100%", height: "100%", objectFit: "contain" }}
+                style={cropStyle(hoopPart, hoopSize.width, hoopSize.height)}
               />
             </div>
           </div>

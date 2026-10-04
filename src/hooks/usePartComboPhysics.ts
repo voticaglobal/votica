@@ -13,135 +13,191 @@ export type ComboPhysicsNode = {
 };
 
 /**
- * Physics is purely visual (per the spec: never a stand-in for confirmed
- * weight/strength/manufacturability). A real 2D constraint chain (Matter.js),
- * not independent per-node CSS keyframe loops — each node hangs from its
- * actual attachment point (not its image center) and children follow their
- * parent's rotation because the constraint reads an offset point on the
- * parent's own body, which Matter rotates with the body automatically.
+ * off:  stable rest pose, no simulation (reduced motion, motion off, page load).
+ * kick: edit mode — after a part is added or removed, the chain swings briefly and settles; no dragging.
+ * live: preview mode — the chain keeps swinging and the bottom part can be pulled and released.
+ */
+export type ComboPhysicsMode = "off" | "kick" | "live";
+
+const KICK_DURATION_MS = 2600;
+const PULL_ANGLE_RAD = 0.5;
+const MAX_STEP_MS = 32;
+
+type Vec = { x: number; y: number };
+
+function pivotOf(node: ComboPhysicsNode, centers: Map<string, Vec>, anchor: Vec): Vec {
+  const parentCenter = node.parentUid ? centers.get(node.parentUid) : undefined;
+  if (!parentCenter || !node.parentChildOffsetPx) return anchor;
+  return { x: parentCenter.x + node.parentChildOffsetPx.x, y: parentCenter.y + node.parentChildOffsetPx.y };
+}
+
+/** Body centers for the hanging rest pose: every pivot coincides with its parent's child point exactly. */
+function restCenters(anchor: Vec, nodes: ComboPhysicsNode[]): Map<string, Vec> {
+  const centers = new Map<string, Vec>();
+  for (const node of nodes) {
+    const pivot = pivotOf(node, centers, anchor);
+    centers.set(node.uid, {
+      x: pivot.x - node.selfAttachOffsetPx.x,
+      y: pivot.y - node.selfAttachOffsetPx.y,
+    });
+  }
+  return centers;
+}
+
+function writeTransform(el: HTMLElement, x: number, y: number, angle: number) {
+  el.style.transform = `translate(${x}px, ${y}px) rotate(${angle}rad)`;
+}
+
+/**
+ * Physics is purely visual (never a stand-in for confirmed weight, strength, or
+ * manufacturability). Each part is a rigid body pinned to its parent's
+ * attachment point by a Matter.js constraint; children inherit the parent's
+ * rotation because the constraint reads a local offset on the parent body.
  */
 export function usePartComboPhysics({
   containerRef,
   anchorPx,
   nodes,
   getNodeEl,
-  enabled,
+  mode,
 }: {
   containerRef: RefObject<HTMLDivElement | null>;
   anchorPx: { x: number; y: number } | null;
   nodes: ComboPhysicsNode[];
   getNodeEl: (uid: string) => HTMLElement | null;
-  enabled: boolean;
+  mode: ComboPhysicsMode;
 }) {
-  const selectedUidRef = useRef<string | null>(null);
   const reshakeFnRef = useRef<() => void>(() => {});
+  const seenSignatureRef = useRef<string | null>(null);
 
   useEffect(() => {
     const container = containerRef.current;
+    const signature = nodes.map((n) => n.uid).join("|");
+    const previousSignature = seenSignatureRef.current;
+    seenSignatureRef.current = signature;
+    const partsChanged = previousSignature !== null && previousSignature !== signature;
     if (!anchorPx || !container || nodes.length === 0) return;
 
-    if (!enabled) {
-      // Edit mode / reduced-motion / offscreen: render the stable rest pose
-      // (straight down from each node's parent point) and do nothing else.
-      let cursor = anchorPx;
+    const anchor = anchorPx;
+    const centers = restCenters(anchor, nodes);
+
+    const writeRest = () => {
       for (const node of nodes) {
         const el = getNodeEl(node.uid);
-        if (!el) continue;
-        const restX = cursor.x - node.selfAttachOffsetPx.x;
-        const restY = cursor.y - node.selfAttachOffsetPx.y + node.radiusPx * 0.6;
-        el.style.transform = `translate(${restX}px, ${restY}px) rotate(0deg)`;
-        cursor = {
-          x: restX + (node.parentChildOffsetPx?.x ?? 0),
-          y: restY + node.radiusPx * 1.2,
-        };
+        const c = centers.get(node.uid);
+        if (el && c) writeTransform(el, c.x, c.y, 0);
       }
+    };
+
+    if (mode === "off" || (mode === "kick" && !partsChanged)) {
+      writeRest();
       return;
     }
 
+    const interactive = mode === "live";
     const engine = Matter.Engine.create();
-    engine.gravity.y = 1.1;
 
-    const anchorBody = Matter.Bodies.circle(anchorPx.x, anchorPx.y, 2, { isStatic: true });
+    const anchorBody = Matter.Bodies.circle(anchor.x, anchor.y, 2, {
+      isStatic: true,
+      collisionFilter: { group: -1 },
+    });
+    const ordered: { node: ComboPhysicsNode; body: Matter.Body }[] = [];
     const bodies = new Map<string, Matter.Body>();
-    const composites: Matter.Body[] = [anchorBody];
     const constraints: Matter.Constraint[] = [];
 
-    let cursorGuess = anchorPx;
     for (const node of nodes) {
-      const body = Matter.Bodies.circle(cursorGuess.x, cursorGuess.y + node.radiusPx * 2, node.radiusPx, {
-        frictionAir: 0.028,
+      const c = centers.get(node.uid)!;
+      const body = Matter.Bodies.circle(c.x, c.y, node.radiusPx, {
+        frictionAir: 0.04,
+        collisionFilter: { group: -1 },
       });
-      bodies.set(node.uid, body);
-      composites.push(body);
-
       const parentBody = node.parentUid ? bodies.get(node.parentUid) : undefined;
       constraints.push(
         Matter.Constraint.create({
           bodyA: parentBody ?? anchorBody,
-          pointA: parentBody ? node.parentChildOffsetPx! : { x: 0, y: 0 },
+          pointA: parentBody && node.parentChildOffsetPx ? node.parentChildOffsetPx : { x: 0, y: 0 },
           bodyB: body,
           pointB: node.selfAttachOffsetPx,
-          length: 2,
-          stiffness: 0.85,
-          damping: 0.12,
+          length: 0,
+          stiffness: 0.9,
         }),
       );
-      cursorGuess = { x: body.position.x, y: body.position.y };
+      bodies.set(node.uid, body);
+      ordered.push({ node, body });
     }
+    Matter.Composite.add(engine.world, [anchorBody, ...ordered.map((o) => o.body), ...constraints]);
 
-    Matter.Composite.add(engine.world, [...composites, ...constraints]);
-    // Small initial nudge so the chain visibly settles instead of looking frozen.
-    const firstBody = bodies.get(nodes[0].uid);
-    if (firstBody) Matter.Body.setVelocity(firstBody, { x: 1.2, y: 0 });
+    // Pull the bottom-most part sideways around its own pivot, then let go: the
+    // pivot stays on the attachment point while the part swings back.
+    const tail = ordered[ordered.length - 1];
+    const tailPivot = pivotOf(tail.node, centers, anchor);
+    const tailCenter = centers.get(tail.node.uid)!;
+    const cos = Math.cos(PULL_ANGLE_RAD);
+    const sin = Math.sin(PULL_ANGLE_RAD);
+    const dx = tailCenter.x - tailPivot.x;
+    const dy = tailCenter.y - tailPivot.y;
+    Matter.Body.setAngle(tail.body, PULL_ANGLE_RAD);
+    Matter.Body.setPosition(tail.body, {
+      x: tailPivot.x + dx * cos - dy * sin,
+      y: tailPivot.y + dx * sin + dy * cos,
+    });
 
-    reshakeFnRef.current = () => {
-      const target = bodies.get(nodes[0].uid);
-      if (target) Matter.Body.setVelocity(target, { x: 3.5, y: -1 });
+    const applyTransforms = () => {
+      for (const { node, body } of ordered) {
+        const el = getNodeEl(node.uid);
+        if (el) writeTransform(el, body.position.x, body.position.y, body.angle);
+      }
     };
+    applyTransforms();
 
+    const startedAt = performance.now();
+    let lastTime = startedAt;
     let rafId = 0;
-    let lastTime = performance.now();
+    let running = false;
     let dragging = false;
+    let dragBody: Matter.Body | null = null;
+    let prevPoint = { x: 0, y: 0 };
+    let prevTime = 0;
 
     const toContainerPoint = (clientX: number, clientY: number) => {
       const rect = container.getBoundingClientRect();
       return { x: clientX - rect.left, y: clientY - rect.top };
     };
 
-    const applyTransforms = () => {
-      for (const node of nodes) {
-        const el = getNodeEl(node.uid);
-        const body = bodies.get(node.uid);
-        if (!el || !body) continue;
-        el.style.transform = `translate(${body.position.x}px, ${body.position.y}px) rotate(${body.angle}rad)`;
-      }
-    };
-
     const tick = (now: number) => {
-      const delta = Math.min(now - lastTime, 32);
+      const delta = Math.min(now - lastTime, MAX_STEP_MS);
       lastTime = now;
       if (!dragging) Matter.Engine.update(engine, delta);
       applyTransforms();
+      if (mode === "kick" && now - startedAt > KICK_DURATION_MS) {
+        running = false;
+        writeRest();
+        return;
+      }
       rafId = requestAnimationFrame(tick);
     };
-    rafId = requestAnimationFrame(tick);
 
-    let dragBody: Matter.Body | null = null;
-    let prevPoint = { x: 0, y: 0 };
-    let prevTime = 0;
+    const start = () => {
+      if (running) return;
+      running = true;
+      lastTime = performance.now();
+      rafId = requestAnimationFrame(tick);
+    };
+    const stop = () => {
+      running = false;
+      cancelAnimationFrame(rafId);
+    };
 
     const onPointerDown = (e: PointerEvent) => {
-      const target = (e.target as HTMLElement).closest("[data-combo-node]");
-      const uid = target?.getAttribute("data-combo-node");
-      const body = uid ? bodies.get(uid) : undefined;
-      if (!body) return;
+      const target = e.target as HTMLElement;
+      const hit = ordered.find(({ node }) => getNodeEl(node.uid)?.contains(target));
+      if (!hit) return;
       dragging = true;
-      dragBody = body;
-      selectedUidRef.current = uid ?? null;
+      dragBody = hit.body;
       (e.target as HTMLElement).setPointerCapture(e.pointerId);
       const p = toContainerPoint(e.clientX, e.clientY);
-      Matter.Body.setPosition(body, p);
-      Matter.Body.setVelocity(body, { x: 0, y: 0 });
+      Matter.Body.setPosition(hit.body, p);
+      Matter.Body.setVelocity(hit.body, { x: 0, y: 0 });
       prevPoint = p;
       prevTime = performance.now();
     };
@@ -156,47 +212,62 @@ export function usePartComboPhysics({
       prevTime = now;
     };
     const onPointerUp = () => {
+      if (!dragging) return;
       dragging = false;
       dragBody = null;
     };
 
-    container.addEventListener("pointerdown", onPointerDown);
-    container.addEventListener("pointermove", onPointerMove);
-    container.addEventListener("pointerup", onPointerUp);
-    container.addEventListener("pointercancel", onPointerUp);
+    if (interactive) {
+      container.addEventListener("pointerdown", onPointerDown);
+      container.addEventListener("pointermove", onPointerMove);
+      container.addEventListener("pointerup", onPointerUp);
+      container.addEventListener("pointercancel", onPointerUp);
+    }
 
-    // Pause the simulation (not just visually, but the rAF loop itself) when
-    // the tab is hidden or the canvas scrolls offscreen — no wasted CPU/battery.
-    let paused = false;
-    const pause = () => {
-      if (paused) return;
-      paused = true;
-      cancelAnimationFrame(rafId);
+    reshakeFnRef.current = () => {
+      Matter.Body.setVelocity(tail.body, { x: 4, y: 0 });
+      start();
     };
-    const resume = () => {
-      if (!paused) return;
-      paused = false;
-      lastTime = performance.now();
-      rafId = requestAnimationFrame(tick);
+
+    // Pause the simulation when the tab is hidden or the canvas scrolls offscreen.
+    let offscreen = false;
+    let hidden = document.hidden;
+    const syncRunning = () => {
+      const kickDone = mode === "kick" && performance.now() - startedAt > KICK_DURATION_MS;
+      if (hidden || offscreen || kickDone) stop();
+      else start();
     };
-    const onVisibility = () => (document.hidden ? pause() : resume());
+    const onVisibility = () => {
+      hidden = document.hidden;
+      syncRunning();
+    };
     document.addEventListener("visibilitychange", onVisibility);
-    const io = new IntersectionObserver(([entry]) => (entry.isIntersecting ? resume() : pause()), { threshold: 0 });
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        offscreen = !entry.isIntersecting;
+        syncRunning();
+      },
+      { threshold: 0 },
+    );
     io.observe(container);
 
+    syncRunning();
+
     return () => {
-      cancelAnimationFrame(rafId);
+      stop();
       document.removeEventListener("visibilitychange", onVisibility);
       io.disconnect();
-      container.removeEventListener("pointerdown", onPointerDown);
-      container.removeEventListener("pointermove", onPointerMove);
-      container.removeEventListener("pointerup", onPointerUp);
-      container.removeEventListener("pointercancel", onPointerUp);
+      if (interactive) {
+        container.removeEventListener("pointerdown", onPointerDown);
+        container.removeEventListener("pointermove", onPointerMove);
+        container.removeEventListener("pointerup", onPointerUp);
+        container.removeEventListener("pointercancel", onPointerUp);
+      }
       Matter.Composite.clear(engine.world, false);
       Matter.Engine.clear(engine);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [anchorPx?.x, anchorPx?.y, nodes, enabled]);
+  }, [anchorPx?.x, anchorPx?.y, nodes, mode]);
 
   return { reshake: () => reshakeFnRef.current() };
 }
